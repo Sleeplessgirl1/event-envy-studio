@@ -32,7 +32,7 @@ const CatalogoPage = () => {
     <Layout>
       {/* Hero Banner */}
       <section
-        className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden bg-cover bg-center"
+        className="relative h-[500px] md:h-[700px] flex items-center justify-center overflow-hidden bg-cover bg-center"
         style={{ backgroundImage: "url('/catalog/hero-banner.png')" }}
       >
         <div className="absolute inset-0 bg-background/50" />
