@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-const logo = "/347fbb9a-749b-4126-9180-eab6567362a4.png";
+const logo = "/0c4cf1cd-2444-4483-9e36-a81f04ffc389.png";
 
 const navLinks = [
   { to: "/", label: "Inicio" },
