@@ -16,7 +16,7 @@ const features = [
     description: "Desde clásico hasta contemporáneo, tenemos lo que tu evento necesita.",
   },
   {
-    icon: Users,
+    icon: ClipboardCheck,
     title: "Atención Personalizada",
     description: "Te acompañamos en cada detalle para hacer realidad tu visión.",
   },
