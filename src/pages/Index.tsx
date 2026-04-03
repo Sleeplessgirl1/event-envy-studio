@@ -12,7 +12,7 @@ const features = [
     description: "Piezas seleccionadas con los más altos estándares para tu evento.",
   },
   {
-    icon: ChairsIcon,
+    icon: ColorCirclesIcon,
     title: "Variedad de Estilos",
     description: "Desde clásico hasta contemporáneo, tenemos lo que tu evento necesita.",
   },
