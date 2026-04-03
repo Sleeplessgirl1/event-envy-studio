@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-event.jpg";
 
 const features = [
   {
-    icon: Sparkles,
+    icon: Wine,
     title: "Calidad Premium",
     description: "Piezas seleccionadas con los más altos estándares para tu evento.",
   },
