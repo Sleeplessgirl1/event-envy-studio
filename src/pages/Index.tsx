@@ -21,7 +21,7 @@ const features = [
     description: "Te acompañamos en cada detalle para hacer realidad tu visión.",
   },
   {
-    icon: Shield,
+    icon: ShieldCheck,
     title: "Confianza",
     description: "Años de experiencia respaldando eventos memorables en Chihuahua.",
   },
