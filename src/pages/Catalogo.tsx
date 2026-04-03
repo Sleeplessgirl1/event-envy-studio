@@ -84,6 +84,7 @@ const CatalogoPage = () => {
                       })()}
                     </div>
                   )}
+                </div>
 
                 <div className="p-4">
                   <h3 className="font-display text-base font-semibold mb-1">{product.name}</h3>
