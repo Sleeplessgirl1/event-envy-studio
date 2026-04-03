@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Wine, Users, Shield } from "lucide-react";
+import { Wine, ClipboardCheck, ShieldCheck } from "lucide-react";
 import ChairsIcon from "@/components/icons/ChairsIcon";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-event.jpg";
@@ -16,12 +16,12 @@ const features = [
     description: "Desde clásico hasta contemporáneo, tenemos lo que tu evento necesita.",
   },
   {
-    icon: Users,
+    icon: ClipboardCheck,
     title: "Atención Personalizada",
     description: "Te acompañamos en cada detalle para hacer realidad tu visión.",
   },
   {
-    icon: Shield,
+    icon: ShieldCheck,
     title: "Confianza",
     description: "Años de experiencia respaldando eventos memorables en Chihuahua.",
   },
