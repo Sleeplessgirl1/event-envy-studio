@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Wine, Users, Palette, Shield } from "lucide-react";
+import { Wine, Users, Shield } from "lucide-react";
+import ChairsIcon from "@/components/icons/ChairsIcon";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-event.jpg";
 
