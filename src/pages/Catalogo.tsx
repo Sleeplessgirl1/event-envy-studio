@@ -33,7 +33,7 @@ const CatalogoPage = () => {
       {/* Hero Banner */}
       <section
         className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden bg-cover bg-center"
-        style={{ backgroundImage: "url('/catalog/hero-banner.png')" }}
+        style={{ backgroundImage: "url('/catalog/hero-banner.png')", backgroundSize: "100% auto" }}
       >
         <div className="absolute inset-0 bg-background/50" />
         <div className="relative z-10 text-center">
