@@ -32,10 +32,10 @@ const CatalogoPage = () => {
     <Layout>
       {/* Hero Banner */}
       <section
-        className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden bg-cover bg-center"
+        className="relative h-[500px] md:h-[700px] flex items-center justify-center overflow-hidden bg-cover bg-center"
         style={{ backgroundImage: "url('/catalog/hero-banner.png')" }}
       >
-        <div className="absolute inset-0 bg-background/30" />
+        <div className="absolute inset-0 bg-background/50" />
         <div className="relative z-10 text-center">
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">Catálogo</h1>
           <p className="font-body text-muted-foreground mt-3 text-sm md:text-base tracking-wide">
