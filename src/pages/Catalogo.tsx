@@ -32,16 +32,8 @@ const CatalogoPage = () => {
     <Layout>
       {/* Hero Banner */}
       <section className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 flex">
-          <div className="flex-1 overflow-hidden">
-            <img src="/catalog/hero-1.png" alt="" className="w-full h-full object-cover" />
-          </div>
-          <div className="flex-1 overflow-hidden">
-            <img src="/catalog/hero-2.png" alt="" className="w-full h-full object-cover" />
-          </div>
-          <div className="flex-1 overflow-hidden">
-            <img src="/catalog/hero-3.png" alt="" className="w-full h-full object-cover" />
-          </div>
+        <div className="absolute inset-0">
+          <img src="/catalog/hero-banner.png" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-background/30" />
         <div className="relative z-10 text-center">
