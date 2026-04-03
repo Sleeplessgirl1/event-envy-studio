@@ -67,14 +67,23 @@ const CatalogoPage = () => {
                 className="group bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 animate-scale-in border border-border"
                 style={{ animationDelay: `${i * 0.05}s`, opacity: 0 }}
               >
-                {/* Placeholder image area */}
-                <div className="aspect-square bg-muted flex items-center justify-center">
-                  <div className="text-muted-foreground/30">
-                    {(() => {
-                      const Icon = categoryIcons[activeCategory] || Wine;
-                      return <Icon size={48} />;
-                    })()}
-                  </div>
+                {/* Product image */}
+                <div className="aspect-square bg-muted flex items-center justify-center overflow-hidden">
+                  {product.image ? (
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="text-muted-foreground/30">
+                      {(() => {
+                        const Icon = categoryIcons[activeCategory] || Wine;
+                        return <Icon size={48} />;
+                      })()}
+                    </div>
+                  )}
                 </div>
 
                 <div className="p-4">
