@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Sparkles, Users, Palette, Shield } from "lucide-react";
+import { Wine, Users, Palette, Shield } from "lucide-react";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-event.jpg";
 
