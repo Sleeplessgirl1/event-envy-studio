@@ -30,12 +30,30 @@ const CatalogoPage = () => {
 
   return (
     <Layout>
-      <section className="section-padding">
-        <div className="container-custom">
-          <h1 className="font-display text-3xl md:text-4xl font-bold text-center mb-2">Catálogo</h1>
-          <p className="text-center text-muted-foreground font-body mb-8">
+      {/* Hero Banner */}
+      <section className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 flex">
+          <div className="flex-1 overflow-hidden">
+            <img src="/catalog/hero-1.png" alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="flex-1 overflow-hidden">
+            <img src="/catalog/hero-2.png" alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="flex-1 overflow-hidden">
+            <img src="/catalog/hero-3.png" alt="" className="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div className="absolute inset-0 bg-background/60" />
+        <div className="relative z-10 text-center">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">Catálogo</h1>
+          <p className="font-body text-muted-foreground mt-3 text-sm md:text-base tracking-wide">
             Explora nuestra colección completa de renta para eventos
           </p>
+        </div>
+      </section>
+
+      <section className="section-padding">
+        <div className="container-custom">
           <div className="w-16 h-0.5 bg-secondary mx-auto mb-10" />
 
           {/* Category Tabs */}
