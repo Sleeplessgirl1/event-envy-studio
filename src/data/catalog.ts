@@ -22,7 +22,7 @@ export const categories: Category[] = [
       { id: "vino-tinto", name: "Vino Tinto", price: 10, image: "/catalog/vino-tinto.png" },
       { id: "mimosa", name: "Mimosa", price: 10, image: "/catalog/mimosa.webp" },
       { id: "vaso-highball", name: "Vaso Highball", price: 3, image: "/catalog/highball.png" },
-      { id: "vaso-napa", name: "Vaso Napa", price: 4, image: "/catalog/napa.png" },
+      { id: "vaso-napa", name: "Vaso Napa", price: 4, image: "/catalog/napa.webp" },
       { id: "vaso-malfi", name: "Vaso Malfi", price: 10, image: "/catalog/malfi.png" },
       { id: "taza-cafe", name: "Taza Café", price: 6, image: "/catalog/taza.jfif" },
       { id: "plato-sopa", name: "Plato Sopa", price: 5, image: "/catalog/bowl.JPG" },
