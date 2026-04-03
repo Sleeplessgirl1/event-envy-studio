@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Wine, ClipboardCheck, ShieldCheck } from "lucide-react";
-import ChairsIcon from "@/components/icons/ChairsIcon";
+import { Wine, ShieldCheck } from "lucide-react";
+import ChatBubblesIcon from "@/components/icons/ChatBubblesIcon";
+import ColorCirclesIcon from "@/components/icons/ColorCirclesIcon";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-event.jpg";
 
