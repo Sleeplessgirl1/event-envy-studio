@@ -55,10 +55,15 @@ export default {
           DEFAULT: "hsl(var(--wine))",
           foreground: "hsl(var(--wine-foreground))",
         },
-        brown: "hsl(var(--brown))",
+        brown: {
+          DEFAULT: "hsl(var(--brown))",
+          light: "hsl(var(--brown-light))",
+          dark: "hsl(var(--brown-dark))",
+        },
         garnet: "hsl(var(--garnet))",
         olive: "hsl(var(--olive))",
         "beige-warm": "hsl(var(--beige-warm))",
+        cream: "hsl(var(--cream))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
