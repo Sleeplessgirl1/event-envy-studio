@@ -4,6 +4,7 @@ import ChatBubblesIcon from "@/components/icons/ChatBubblesIcon";
 import ColorCirclesIcon from "@/components/icons/ColorCirclesIcon";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-event.jpg";
+import copasIcon from "@/assets/copas-brindis-icon.png";
 import { categories } from "@/data/catalog";
 
 const categoryImages: Record<string, string> = {
