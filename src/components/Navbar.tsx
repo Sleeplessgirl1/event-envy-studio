@@ -28,7 +28,7 @@ const Navbar = () => {
               key={link.to}
               to={link.to}
               className={`font-body text-sm tracking-widest uppercase transition-colors duration-300 hover:text-secondary ${
-                location.pathname === link.to ? "text-secondary" : "text-muted-foreground"
+                location.pathname === link.to ? "text-secondary" : "text-primary-foreground"
               }`}
             >
               {link.label}
@@ -56,7 +56,7 @@ const Navbar = () => {
                 to={link.to}
                 onClick={() => setIsOpen(false)}
                 className={`font-body text-sm tracking-widest uppercase py-2 transition-colors duration-300 ${
-                  location.pathname === link.to ? "text-secondary" : "text-muted-foreground"
+                  location.pathname === link.to ? "text-secondary" : "text-primary-foreground"
                 }`}
               >
                 {link.label}
