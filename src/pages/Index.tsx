@@ -33,17 +33,17 @@ const Index = () => {
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 animate-fade-in uppercase italic">
-            El Arte de Ambientar
+            CREA EXPERIENCIAS INOLVIDABLES
           </h1>
           <p
-            className="font-body text-white/80 text-base md:text-lg mb-10 max-w-2xl mx-auto animate-fade-in"
+            className="font-body text-white/80 text-base md:text-lg mb-10 max-w-2xl mx-auto animate-fade-in opacity-100"
             style={{ animationDelay: "0.2s", opacity: 0 }}
           >
             renta de mobiliario, cristalería y mantelería para eventos que dejan huella en Chihuahua
           </p>
           <Link
             to="/catalogo"
-            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-white/60 text-white hover:bg-white/10 transition-all duration-300 animate-fade-in"
+            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-white/60 text-white transition-all duration-300 animate-fade-in bg-accent"
             style={{ animationDelay: "0.4s", opacity: 0 }}
           >
             Ver Catálogo
@@ -65,17 +65,17 @@ const Index = () => {
       </section>
 
       {/* How it works */}
-      <section className="section-padding bg-muted">
+      <section className="section-padding bg-accent">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            <div className="animate-fade-in-up" style={{ animationDelay: "0s", opacity: 0 }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-brown/30 text-brown mb-6">
-                <Wine size={28} />
+            <div className="animate-fade-in-up border border-solid rounded-2xl shadow-lg px-[33px] my-0 mb-[4px] pt-[23px] pb-[20px] bg-accent" style={{ animationDelay: "0s", opacity: 0 }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border mb-6 text-secondary-foreground border-primary-foreground">
+                <Wine size={28} className="text-primary-foreground" />
               </div>
-              <h3 className="font-display text-xl font-light text-foreground mb-3 lowercase italic">
+              <h3 className="font-display text-xl font-light mb-3 lowercase italic text-white">
                 elige tus piezas
               </h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
+              <p className="font-body text-sm leading-relaxed text-secondary-foreground">
                 Explora nuestro catálogo con cristalería, mobiliario, mantelería y más.
               </p>
             </div>
@@ -146,9 +146,9 @@ const Index = () => {
       </section>
 
       {/* Testimonial */}
-      <section className="section-padding bg-muted">
+      <section className="section-padding bg-accent-foreground">
         <div className="container-custom text-center max-w-3xl mx-auto">
-          <p className="font-display text-xl md:text-2xl font-light text-foreground/80 italic leading-relaxed mb-6">
+          <p className="font-display text-xl font-light italic leading-relaxed mb-6 text-destructive-foreground md:text-3xl">
             "Experiencia 013 transformó nuestra celebración en algo mágico. Cada pieza fue perfecta
             y el servicio superó nuestras expectativas."
           </p>
@@ -159,9 +159,9 @@ const Index = () => {
       </section>
 
       {/* CTA — Beige Warm */}
-      <section className="section-padding bg-beige-warm text-center">
+      <section className="section-padding bg-beige-warm text-center bg-white text-white">
         <div className="container-custom">
-          <h2 className="font-display text-3xl md:text-4xl font-light mb-4 lowercase italic text-foreground">
+          <h2 className="font-display text-3xl md:text-4xl font-light mb-4 lowercase italic text-black">
             sé el anfitrión perfecto
           </h2>
           <p className="font-body text-foreground/60 mb-8 max-w-xl mx-auto text-sm">
@@ -169,7 +169,7 @@ const Index = () => {
           </p>
           <Link
             to="/contacto"
-            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-foreground/40 text-foreground hover:bg-foreground/5 transition-all duration-300"
+            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-foreground/40 transition-all duration-300 bg-accent text-primary-foreground"
           >
             Contáctanos
           </Link>
