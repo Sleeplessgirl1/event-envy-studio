@@ -144,7 +144,7 @@ const Index = () => {
           <div className="text-center mt-10">
             <Link
               to="/catalogo"
-              className="inline-block font-body text-xs tracking-[0.3em] uppercase px-8 py-3 border border-brown/40 text-foreground hover:bg-muted transition-all duration-300"
+              className="inline-block font-body text-xs tracking-[0.3em] uppercase px-8 py-3 border text-foreground transition-all duration-300 bg-[#c1b6a4] border-secondary-foreground"
             >
               Ver Todo
             </Link>
