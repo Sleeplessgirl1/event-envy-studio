@@ -44,7 +44,7 @@ const Index = () => {
           </p>
           <Link
             to="/catalogo"
-            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-white/60 text-white transition-all duration-300 animate-fade-in bg-accent"
+            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-white/60 text-white transition-all duration-300 animate-fade-in bg-[#c1b6a4]"
             style={{ animationDelay: "0.4s", opacity: 0 }}
           >
             Ver Catálogo
@@ -66,7 +66,7 @@ const Index = () => {
       </section>
 
       {/* How it works */}
-      <section className="section-padding bg-accent">
+      <section className="section-padding bg-[#c1b6a4]">
         <div className="container-custom py-0">
           <h2 className="font-display text-3xl text-white mb-6 uppercase italic text-center font-medium md:text-6xl">
             ¿CÓMO FUNCIONA?
@@ -75,7 +75,7 @@ const Index = () => {
             <img src={copasIcon} alt="Dos copas brindando" loading="lazy" width={120} height={120} className="w-24 h-24 md:w-28 md:h-28 object-contain" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            <div className="animate-fade-in-up border border-solid rounded-2xl shadow-lg px-[33px] my-0 mb-[4px] pt-[23px] pb-[20px] bg-accent" style={{ animationDelay: "0s", opacity: 0 }}>
+            <div className="animate-fade-in-up border border-solid rounded-2xl shadow-lg px-[33px] my-0 mb-[4px] pt-[23px] pb-[20px] bg-[#c1b6a4]" style={{ animationDelay: "0s", opacity: 0 }}>
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border mb-6 text-secondary-foreground border-primary-foreground">
                 <Wine size={28} className="text-primary-foreground" />
               </div>
@@ -101,7 +101,7 @@ const Index = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border text-brown mb-6 border-primary-foreground my-[17px]">
                 <ShieldCheck size={28} className="text-primary-foreground pt-0 my-[22px]" />
               </div>
-              <h3 className="font-display text-xl font-light mb-3 lowercase italic text-primary-foreground bg-accent">
+              <h3 className="font-display text-xl font-light mb-3 lowercase italic text-primary-foreground bg-[#c1b6a4]">
                 disfruta sin preocupaciones
               </h3>
               <p className="font-body text-sm leading-relaxed text-primary-foreground px-[40px]">
@@ -176,7 +176,7 @@ const Index = () => {
           </p>
           <Link
             to="/contacto"
-            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-foreground/40 transition-all duration-300 bg-accent text-primary-foreground"
+            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-foreground/40 transition-all duration-300 text-primary-foreground bg-[#c1b6a4]"
           >
             Contáctanos
           </Link>
