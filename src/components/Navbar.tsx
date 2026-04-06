@@ -15,20 +15,20 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-brown-dark/95 backdrop-blur-sm border-b border-foreground/10">
       <div className="container-custom flex items-center justify-between h-16 md:h-20">
         <Link to="/">
           <img src={logo} alt="Experiencia 013" className="h-16 md:h-20 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className={`font-body text-sm tracking-widest uppercase transition-colors duration-300 hover:text-secondary ${
-                location.pathname === link.to ? "text-secondary" : "text-primary-foreground"
+              className={`font-body text-xs tracking-[0.25em] uppercase transition-colors duration-300 hover:text-beige-warm ${
+                location.pathname === link.to ? "text-beige-warm" : "text-cream"
               }`}
             >
               {link.label}
@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-cream"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -48,15 +48,15 @@ const Navbar = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <nav className="md:hidden bg-background border-t border-border animate-fade-in">
+        <nav className="md:hidden bg-brown-dark border-t border-foreground/10 animate-fade-in">
           <div className="container-custom py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
                 onClick={() => setIsOpen(false)}
-                className={`font-body text-sm tracking-widest uppercase py-2 transition-colors duration-300 ${
-                  location.pathname === link.to ? "text-secondary" : "text-primary-foreground"
+                className={`font-body text-xs tracking-[0.25em] uppercase py-2 transition-colors duration-300 ${
+                  location.pathname === link.to ? "text-beige-warm" : "text-cream"
                 }`}
               >
                 {link.label}
