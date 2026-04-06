@@ -4,7 +4,7 @@ import ChatBubblesIcon from "@/components/icons/ChatBubblesIcon";
 import ColorCirclesIcon from "@/components/icons/ColorCirclesIcon";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-event.jpg";
-import copasIcon from "@/assets/copas-brindis-icon.png";
+import copasIcon from "/68aadc0b-7029-4588-ab0d-92a360160fd8.png";
 import { categories } from "@/data/catalog";
 
 const categoryImages: Record<string, string> = {
@@ -67,11 +67,11 @@ const Index = () => {
 
       {/* How it works */}
       <section className="section-padding bg-accent">
-        <div className="container-custom">
-          <h2 className="font-display text-3xl md:text-4xl font-light text-center text-white mb-6 uppercase italic">
-            How It Works
+        <div className="container-custom py-0">
+          <h2 className="font-display text-3xl text-white mb-6 uppercase italic text-center font-medium md:text-8xl">
+            ¿CÓMO FUNCIONA?
           </h2>
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center mb-12 pb-0">
             <img src={copasIcon} alt="Dos copas brindando" loading="lazy" width={120} height={120} className="w-24 h-24 md:w-28 md:h-28 object-contain" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
@@ -86,25 +86,25 @@ const Index = () => {
                 Explora nuestro catálogo con cristalería, mobiliario, mantelería y más.
               </p>
             </div>
-            <div className="animate-fade-in-up" style={{ animationDelay: "0.15s", opacity: 0 }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-brown/30 text-brown mb-6">
-                <ChatBubblesIcon size={28} />
+            <div className="animate-fade-in-up border border-primary-foreground border-solid rounded-3xl shadow-lg" style={{ animationDelay: "0.15s", opacity: 0 }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border text-brown mb-6 border-primary-foreground py-0 my-[16px]">
+                <ChatBubblesIcon size={28} className="text-primary-foreground" />
               </div>
-              <h3 className="font-display text-xl font-light text-foreground mb-3 lowercase italic">
+              <h3 className="font-display text-xl font-light mb-3 lowercase italic text-primary-foreground">
                 personaliza tu evento
               </h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
+              <p className="font-body text-sm leading-relaxed text-primary-foreground px-[28px]">
                 Te asesoramos para crear la combinación perfecta que refleje tu visión.
               </p>
             </div>
-            <div className="animate-fade-in-up" style={{ animationDelay: "0.3s", opacity: 0 }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-brown/30 text-brown mb-6">
-                <ShieldCheck size={28} />
+            <div className="animate-fade-in-up text-primary-foreground border border-primary-foreground border-solid rounded-3xl shadow-lg opacity-100 my-0" style={{ animationDelay: "0.3s", opacity: 0 }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border text-brown mb-6 border-primary-foreground my-[17px]">
+                <ShieldCheck size={28} className="text-primary-foreground pt-0 my-[22px]" />
               </div>
-              <h3 className="font-display text-xl font-light text-foreground mb-3 lowercase italic">
+              <h3 className="font-display text-xl font-light mb-3 lowercase italic text-primary-foreground bg-primary-foreground">
                 disfruta sin preocupaciones
               </h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
+              <p className="font-body text-sm leading-relaxed text-primary-foreground px-[40px]">
                 Nosotros nos encargamos de la logística para que tú disfrutes tu evento.
               </p>
             </div>
