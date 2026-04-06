@@ -56,7 +56,7 @@ const Index = () => {
       <section className="section-padding bg-background">
         <div className="container-custom text-center max-w-3xl mx-auto">
           <p className="font-body text-muted-foreground text-sm tracking-widest uppercase mb-6">
-            Experiencia 013
+            - Experiencia 013
           </p>
           <p className="font-display text-2xl md:text-3xl font-light text-foreground leading-relaxed italic">
             Creemos que cada evento merece ser extraordinario. Por eso, ponemos a tu disposición piezas
@@ -155,7 +155,7 @@ const Index = () => {
       {/* Testimonial */}
       <section className="section-padding bg-accent-foreground">
         <div className="container-custom text-center max-w-3xl mx-auto">
-          <p className="font-display text-xl font-light italic leading-relaxed mb-6 text-destructive-foreground md:text-3xl">
+          <p className="font-display text-xl font-light italic leading-relaxed mb-6 text-card-foreground md:text-4xl">
             "Experiencia 013 transformó nuestra celebración en algo mágico. Cada pieza fue perfecta
             y el servicio superó nuestras expectativas."
           </p>
