@@ -37,16 +37,16 @@ const CatalogoPage = () => {
       >
         <div className="absolute inset-0 bg-background/[0.72]" />
         <div className="relative z-10 text-center">
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">Catálogo</h1>
+          <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tight font-display">​CATÁLOGO</h1>
           <p className="font-body text-foreground/70 mt-3 text-sm md:text-base tracking-wide font-medium">
             Explora nuestra colección completa de renta para eventos
           </p>
         </div>
       </section>
 
-      <section className="section-padding">
+      <section className="section-padding border-popover-foreground text-card-foreground">
         <div className="container-custom">
-          <div className="w-16 h-0.5 bg-secondary mx-auto mb-10" />
+          <div className="w-16 h-0.5 mx-auto mb-10 bg-[#c1b6a4]" />
 
           {/* Category Tabs */}
           <div className="flex flex-wrap justify-center gap-2 mb-12">
@@ -58,7 +58,7 @@ const CatalogoPage = () => {
                   onClick={() => setActiveCategory(cat.id)}
                   className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs md:text-sm font-body tracking-wide transition-all duration-300 border ${
                     activeCategory === cat.id
-                      ? "bg-secondary text-secondary-foreground border-secondary"
+                      ? "text-neutral-50 bg-[#c2bcad] border-card-foreground"
                       : "bg-background text-muted-foreground border-border hover:border-secondary hover:text-secondary"
                   }`}
                 >
@@ -101,7 +101,7 @@ const CatalogoPage = () => {
                   {product.dimensions && (
                     <p className="text-xs text-muted-foreground mb-1">{product.dimensions}</p>
                   )}
-                  <p className="font-body text-lg font-bold text-secondary mb-2">
+                  <p className="font-body text-lg font-bold mb-2 text-sidebar-primary">
                     ${product.price.toLocaleString("es-MX")}.00 MXN
                     {product.priceNote && (
                       <span className="text-xs font-normal text-muted-foreground ml-1">
