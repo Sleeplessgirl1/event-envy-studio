@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Wine, ShieldCheck } from "lucide-react";
 import ChatBubblesIcon from "@/components/icons/ChatBubblesIcon";
 import ColorCirclesIcon from "@/components/icons/ColorCirclesIcon";
-import ChairsIcon from "@/components/icons/ChairsIcon";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-event.jpg";
 import { categories } from "@/data/catalog";
@@ -33,18 +32,18 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-cream mb-6 animate-fade-in lowercase">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 animate-fade-in lowercase italic">
             el arte de ambientar
           </h1>
           <p
-            className="font-body text-cream/80 text-base md:text-lg mb-10 max-w-2xl mx-auto animate-fade-in"
+            className="font-body text-white/80 text-base md:text-lg mb-10 max-w-2xl mx-auto animate-fade-in"
             style={{ animationDelay: "0.2s", opacity: 0 }}
           >
             renta de mobiliario, cristalería y mantelería para eventos que dejan huella en Chihuahua
           </p>
           <Link
             to="/catalogo"
-            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-cream/60 text-cream hover:bg-cream/10 transition-all duration-300 animate-fade-in"
+            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-white/60 text-white hover:bg-white/10 transition-all duration-300 animate-fade-in"
             style={{ animationDelay: "0.4s", opacity: 0 }}
           >
             Ver Catálogo
@@ -53,12 +52,12 @@ const Index = () => {
       </section>
 
       {/* Mission */}
-      <section className="section-padding">
+      <section className="section-padding bg-background">
         <div className="container-custom text-center max-w-3xl mx-auto">
-          <p className="font-body text-cream/70 text-sm tracking-widest uppercase mb-6">
+          <p className="font-body text-muted-foreground text-sm tracking-widest uppercase mb-6">
             Experiencia 013
           </p>
-          <p className="font-display text-2xl md:text-3xl font-light text-cream leading-relaxed">
+          <p className="font-display text-2xl md:text-3xl font-light text-foreground leading-relaxed italic">
             Creemos que cada evento merece ser extraordinario. Por eso, ponemos a tu disposición piezas
             cuidadosamente seleccionadas para que cada detalle cuente.
           </p>
@@ -66,39 +65,39 @@ const Index = () => {
       </section>
 
       {/* How it works */}
-      <section className="section-padding bg-brown-dark/40">
+      <section className="section-padding bg-muted">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="animate-fade-in-up" style={{ animationDelay: "0s", opacity: 0 }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-beige-warm/30 text-beige-warm mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-brown/30 text-brown mb-6">
                 <Wine size={28} />
               </div>
-              <h3 className="font-display text-xl font-light text-cream mb-3 lowercase">
+              <h3 className="font-display text-xl font-light text-foreground mb-3 lowercase italic">
                 elige tus piezas
               </h3>
-              <p className="font-body text-sm text-cream/60 leading-relaxed">
+              <p className="font-body text-sm text-muted-foreground leading-relaxed">
                 Explora nuestro catálogo con cristalería, mobiliario, mantelería y más.
               </p>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: "0.15s", opacity: 0 }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-beige-warm/30 text-beige-warm mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-brown/30 text-brown mb-6">
                 <ChatBubblesIcon size={28} />
               </div>
-              <h3 className="font-display text-xl font-light text-cream mb-3 lowercase">
+              <h3 className="font-display text-xl font-light text-foreground mb-3 lowercase italic">
                 personaliza tu evento
               </h3>
-              <p className="font-body text-sm text-cream/60 leading-relaxed">
+              <p className="font-body text-sm text-muted-foreground leading-relaxed">
                 Te asesoramos para crear la combinación perfecta que refleje tu visión.
               </p>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: "0.3s", opacity: 0 }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-beige-warm/30 text-beige-warm mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-brown/30 text-brown mb-6">
                 <ShieldCheck size={28} />
               </div>
-              <h3 className="font-display text-xl font-light text-cream mb-3 lowercase">
+              <h3 className="font-display text-xl font-light text-foreground mb-3 lowercase italic">
                 disfruta sin preocupaciones
               </h3>
-              <p className="font-body text-sm text-cream/60 leading-relaxed">
+              <p className="font-body text-sm text-muted-foreground leading-relaxed">
                 Nosotros nos encargamos de la logística para que tú disfrutes tu evento.
               </p>
             </div>
@@ -107,12 +106,12 @@ const Index = () => {
       </section>
 
       {/* Browse by Category */}
-      <section className="section-padding">
+      <section className="section-padding bg-background">
         <div className="container-custom">
-          <h2 className="font-display text-3xl md:text-4xl font-light text-center text-cream mb-4 lowercase">
+          <h2 className="font-display text-3xl md:text-4xl font-light text-center text-foreground mb-4 lowercase italic">
             explora por categoría
           </h2>
-          <div className="w-12 h-px bg-beige-warm/40 mx-auto mb-12" />
+          <div className="w-12 h-px bg-brown/40 mx-auto mb-12" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {categories.slice(0, 8).map((category, index) => (
               <Link
@@ -126,9 +125,9 @@ const Index = () => {
                   alt={category.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-brown-dark/50 group-hover:bg-brown-dark/30 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-brown-dark/40 group-hover:bg-brown-dark/20 transition-colors duration-500" />
                 <div className="absolute inset-0 flex items-end p-4">
-                  <h3 className="font-body text-xs tracking-[0.2em] uppercase text-cream">
+                  <h3 className="font-display text-sm tracking-wide text-white italic">
                     {category.name}
                   </h3>
                 </div>
@@ -138,7 +137,7 @@ const Index = () => {
           <div className="text-center mt-10">
             <Link
               to="/catalogo"
-              className="inline-block font-body text-xs tracking-[0.3em] uppercase px-8 py-3 border border-cream/40 text-cream hover:bg-cream/10 transition-all duration-300"
+              className="inline-block font-body text-xs tracking-[0.3em] uppercase px-8 py-3 border border-brown/40 text-foreground hover:bg-muted transition-all duration-300"
             >
               Ver Todo
             </Link>
@@ -146,31 +145,31 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonial / Quote */}
-      <section className="section-padding bg-brown-dark/40">
+      {/* Testimonial */}
+      <section className="section-padding bg-muted">
         <div className="container-custom text-center max-w-3xl mx-auto">
-          <p className="font-display text-xl md:text-2xl font-light text-cream/90 italic leading-relaxed mb-6">
+          <p className="font-display text-xl md:text-2xl font-light text-foreground/80 italic leading-relaxed mb-6">
             "Experiencia 013 transformó nuestra celebración en algo mágico. Cada pieza fue perfecta
             y el servicio superó nuestras expectativas."
           </p>
-          <span className="font-body text-xs tracking-widest uppercase text-beige-warm/70">
+          <span className="font-body text-xs tracking-widest uppercase text-muted-foreground">
             — Cliente Satisfecho
           </span>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section-padding bg-secondary text-secondary-foreground text-center">
+      {/* CTA — Beige Warm */}
+      <section className="section-padding bg-beige-warm text-center">
         <div className="container-custom">
-          <h2 className="font-display text-3xl md:text-4xl font-light mb-4 lowercase">
+          <h2 className="font-display text-3xl md:text-4xl font-light mb-4 lowercase italic text-foreground">
             sé el anfitrión perfecto
           </h2>
-          <p className="font-body text-secondary-foreground/70 mb-8 max-w-xl mx-auto text-sm">
+          <p className="font-body text-foreground/60 mb-8 max-w-xl mx-auto text-sm">
             Contáctanos y juntos diseñaremos cada detalle de tu celebración.
           </p>
           <Link
             to="/contacto"
-            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-secondary-foreground/60 text-secondary-foreground hover:bg-secondary-foreground/10 transition-all duration-300"
+            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-foreground/40 text-foreground hover:bg-foreground/5 transition-all duration-300"
           >
             Contáctanos
           </Link>
