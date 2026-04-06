@@ -68,7 +68,7 @@ const Index = () => {
       {/* How it works */}
       <section className="section-padding bg-accent">
         <div className="container-custom py-0">
-          <h2 className="font-display text-3xl text-white mb-6 uppercase italic text-center font-medium md:text-8xl">
+          <h2 className="font-display text-3xl text-white mb-6 uppercase italic text-center font-medium md:text-6xl">
             ¿CÓMO FUNCIONA?
           </h2>
           <div className="flex justify-center mb-12 pb-0">
@@ -101,7 +101,7 @@ const Index = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border text-brown mb-6 border-primary-foreground my-[17px]">
                 <ShieldCheck size={28} className="text-primary-foreground pt-0 my-[22px]" />
               </div>
-              <h3 className="font-display text-xl font-light mb-3 lowercase italic text-primary-foreground bg-primary-foreground">
+              <h3 className="font-display text-xl font-light mb-3 lowercase italic text-primary-foreground bg-accent">
                 disfruta sin preocupaciones
               </h3>
               <p className="font-body text-sm leading-relaxed text-primary-foreground px-[40px]">
