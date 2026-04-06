@@ -67,6 +67,9 @@ const Index = () => {
       {/* How it works */}
       <section className="section-padding bg-accent">
         <div className="container-custom">
+          <h2 className="font-display text-3xl md:text-4xl font-light text-center text-white mb-12 uppercase italic">
+            How It Works
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="animate-fade-in-up border border-solid rounded-2xl shadow-lg px-[33px] my-0 mb-[4px] pt-[23px] pb-[20px] bg-accent" style={{ animationDelay: "0s", opacity: 0 }}>
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border mb-6 text-secondary-foreground border-primary-foreground">
