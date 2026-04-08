@@ -109,11 +109,11 @@ const CatalogoPage = () => {
                 {activeData?.products.map((product, i) => (
                   <div
                     key={product.id}
-                    className="group bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 animate-scale-in border border-border"
+                    className="group bg-secondary rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 animate-scale-in"
                     style={{ animationDelay: `${i * 0.05}s`, opacity: 0 }}
                   >
                     {/* Product image */}
-                    <div className="h-[300px] w-full bg-secondary flex items-center justify-center overflow-hidden p-6">
+                    <div className="h-[300px] w-full flex items-center justify-center">
                       {product.image ? (
                         <img
                           src={product.image}
