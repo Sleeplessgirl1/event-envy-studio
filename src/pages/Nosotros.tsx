@@ -14,14 +14,14 @@ const Nosotros = () => {
       {/* Hero Banner */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center my-0 mb-[12px] py-0 pb-[18px] pt-[6px]"
           style={{ backgroundImage: `url(${nosotrosBg})` }}
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/40 mb-[20px]" />
       </section>
 
       {/* Sobre Nosotros */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-background my-[94px]">
         <div className="container-custom max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-border mb-6">
