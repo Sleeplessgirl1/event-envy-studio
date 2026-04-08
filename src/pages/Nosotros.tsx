@@ -20,7 +20,7 @@ const Nosotros = () => {
         />
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase italic">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase">
             Nosotros
           </h1>
         </div>
@@ -33,7 +33,7 @@ const Nosotros = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-border mb-6">
               <Users size={28} className="text-muted-foreground" />
             </div>
-            <h2 className="font-display text-3xl md:text-5xl font-light lowercase italic text-foreground mb-2">
+            <h2 className="font-display text-3xl md:text-5xl font-light lowercase text-foreground mb-2">
               sobre nosotros
             </h2>
             <div className="w-12 h-px bg-[#c1b6a4] mx-auto mt-4 mb-8" />
@@ -63,7 +63,7 @@ const Nosotros = () => {
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full border border-[#c1b6a4] mb-6">
                 <Target size={24} className="text-[#c1b6a4]" />
               </div>
-              <h3 className="font-display text-2xl md:text-3xl font-light lowercase italic text-foreground mb-4">
+              <h3 className="font-display text-2xl md:text-3xl font-light lowercase text-foreground mb-4">
                 misión
               </h3>
               <div className="w-10 h-px bg-[#c1b6a4] mb-6 mx-auto md:mx-0" />
@@ -79,7 +79,7 @@ const Nosotros = () => {
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full border border-[#c1b6a4] mb-6">
                 <Eye size={24} className="text-[#c1b6a4]" />
               </div>
-              <h3 className="font-display text-2xl md:text-3xl font-light lowercase italic text-foreground mb-4">
+              <h3 className="font-display text-2xl md:text-3xl font-light lowercase text-foreground mb-4">
                 visión
               </h3>
               <div className="w-10 h-px bg-[#c1b6a4] mb-6 mx-auto md:mx-0" />
@@ -103,7 +103,7 @@ const Nosotros = () => {
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full border border-primary-foreground/40 mb-6">
                 <Phone size={24} className="text-primary-foreground" />
               </div>
-              <h3 className="font-display text-2xl font-light lowercase italic text-primary-foreground mb-4">
+              <h3 className="font-display text-2xl font-light lowercase text-primary-foreground mb-4">
                 contacto
               </h3>
               <p className="font-body text-primary-foreground/80 text-lg tracking-wide">
@@ -114,7 +114,7 @@ const Nosotros = () => {
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full border border-primary-foreground/40 mb-6">
                 <Clock size={24} className="text-primary-foreground" />
               </div>
-              <h3 className="font-display text-2xl font-light lowercase italic text-primary-foreground mb-4">
+              <h3 className="font-display text-2xl font-light lowercase text-primary-foreground mb-4">
                 horario
               </h3>
               <div className="font-body text-primary-foreground/80 text-sm space-y-1">
@@ -134,7 +134,7 @@ const Nosotros = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-border mb-6">
               <FileText size={28} className="text-muted-foreground" />
             </div>
-            <h2 className="font-display text-3xl md:text-4xl font-light uppercase italic text-foreground">
+            <h2 className="font-display text-3xl md:text-4xl font-light uppercase text-foreground">
               Políticas de Servicio
             </h2>
             <div className="w-12 h-px bg-[#c1b6a4] mx-auto mt-4" />
@@ -142,7 +142,7 @@ const Nosotros = () => {
 
           <Accordion type="multiple" className="space-y-2">
             <AccordionItem value="renta" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-lg italic hover:no-underline">
+              <AccordionTrigger className="font-display text-lg hover:no-underline">
                 Renta de Mobiliario y Equipo
               </AccordionTrigger>
               <AccordionContent>
@@ -162,7 +162,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="danos" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-lg italic hover:no-underline">
+              <AccordionTrigger className="font-display text-lg hover:no-underline">
                 Daños, pérdidas de mobiliario, equipo y accesorios
               </AccordionTrigger>
               <AccordionContent>
@@ -180,7 +180,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="cargos" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-lg italic hover:no-underline">
+              <AccordionTrigger className="font-display text-lg hover:no-underline">
                 Cargos adicionales
               </AccordionTrigger>
               <AccordionContent>
@@ -205,7 +205,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="fotos" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-lg italic hover:no-underline">
+              <AccordionTrigger className="font-display text-lg hover:no-underline">
                 Uso de material fotográfico
               </AccordionTrigger>
               <AccordionContent>
@@ -225,7 +225,7 @@ const Nosotros = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-border mb-6">
               <HelpCircle size={28} className="text-muted-foreground" />
             </div>
-            <h2 className="font-display text-3xl md:text-4xl font-light lowercase italic text-foreground">
+            <h2 className="font-display text-3xl md:text-4xl font-light lowercase text-foreground">
               preguntas frecuentes
             </h2>
             <div className="w-12 h-px bg-[#c1b6a4] mx-auto mt-4" />
@@ -233,7 +233,7 @@ const Nosotros = () => {
 
           <Accordion type="single" collapsible className="space-y-2">
             <AccordionItem value="faq-1" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-base italic hover:no-underline">
+              <AccordionTrigger className="font-display text-base hover:no-underline">
                 ¿Puedo rentar aunque sea un evento chico?
               </AccordionTrigger>
               <AccordionContent>
@@ -244,7 +244,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="faq-2" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-base italic hover:no-underline">
+              <AccordionTrigger className="font-display text-base hover:no-underline">
                 ¿Manejan coordinación de eventos o catering?
               </AccordionTrigger>
               <AccordionContent>
@@ -255,7 +255,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="faq-3" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-base italic hover:no-underline">
+              <AccordionTrigger className="font-display text-base hover:no-underline">
                 ¿Ustedes montan la mesa o supervisan el montaje?
               </AccordionTrigger>
               <AccordionContent>
@@ -266,7 +266,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="faq-4" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-base italic hover:no-underline">
+              <AccordionTrigger className="font-display text-base hover:no-underline">
                 ¿Tienen entrega a domicilio?
               </AccordionTrigger>
               <AccordionContent>
@@ -277,7 +277,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="faq-5" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-base italic hover:no-underline">
+              <AccordionTrigger className="font-display text-base hover:no-underline">
                 ¿Puedo separar artículos sin hacer pago de un anticipo?
               </AccordionTrigger>
               <AccordionContent>
@@ -288,7 +288,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="faq-6" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-base italic hover:no-underline">
+              <AccordionTrigger className="font-display text-base hover:no-underline">
                 ¿Puedo hacer cambios o cancelar mi pedido?
               </AccordionTrigger>
               <AccordionContent>
@@ -299,7 +299,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="faq-7" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-base italic hover:no-underline">
+              <AccordionTrigger className="font-display text-base hover:no-underline">
                 ¿Qué pasa si se rompe o pierde algo?
               </AccordionTrigger>
               <AccordionContent>
@@ -310,7 +310,7 @@ const Nosotros = () => {
             </AccordionItem>
 
             <AccordionItem value="faq-8" className="border border-border rounded-lg px-6">
-              <AccordionTrigger className="font-display text-base italic hover:no-underline">
+              <AccordionTrigger className="font-display text-base hover:no-underline">
                 ¿Puedo cambiar la fecha de mi evento?
               </AccordionTrigger>
               <AccordionContent>

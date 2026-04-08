@@ -44,7 +44,7 @@ const CatalogoPage = () => {
         />
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase italic">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase">
             Catálogo
           </h1>
           <p className="font-body text-white/70 mt-3 text-sm md:text-base tracking-wide">
@@ -60,7 +60,7 @@ const CatalogoPage = () => {
 
           {!activeCategory ? (
             <>
-              <h2 className="font-display text-3xl md:text-4xl font-light text-center text-foreground mb-12 lowercase italic">
+              <h2 className="font-display text-3xl md:text-4xl font-light text-center text-foreground mb-12 lowercase">
                 explora por categoría
               </h2>
               {/* Category Image Gallery */}
@@ -80,7 +80,7 @@ const CatalogoPage = () => {
                     />
                     <div className="absolute inset-0 bg-brown-dark/40 group-hover:bg-brown-dark/20 transition-colors duration-500" />
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <h3 className="font-display text-lg md:text-2xl font-light text-white italic tracking-wide">
+                      <h3 className="font-display text-lg md:text-2xl font-light text-white tracking-wide">
                         {cat.name}
                       </h3>
                     </div>
@@ -98,7 +98,7 @@ const CatalogoPage = () => {
                 >
                   ← Todas las categorías
                 </button>
-                <h2 className="font-display text-2xl md:text-4xl font-light lowercase italic text-foreground">
+                <h2 className="font-display text-2xl md:text-4xl font-light lowercase text-foreground">
                   {activeData?.name}
                 </h2>
                 <div className="w-[140px]" /> {/* spacer */}
