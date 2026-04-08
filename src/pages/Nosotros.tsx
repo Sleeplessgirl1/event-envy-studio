@@ -13,6 +13,10 @@ const Nosotros = () => {
     <Layout>
       {/* Hero Banner */}
       <section className="relative py-32 md:py-40 bg-[#c1b6a4] overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${nosotrosBg})` }}
+        />
         <div className="container-custom text-center relative z-10">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-primary-foreground/70 mb-4">
             Experiencia 013
