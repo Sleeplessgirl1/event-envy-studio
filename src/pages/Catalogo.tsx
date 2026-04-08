@@ -35,7 +35,7 @@ const CatalogoPage = () => {
         className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden bg-cover bg-center"
         style={{ backgroundImage: "url('/catalog/hero-banner.png')", backgroundSize: "100% auto" }}
       >
-        <div className="absolute inset-0 bg-background/[0.72]" />
+        <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center">
           <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tight font-display">​CATÁLOGO</h1>
           <p className="font-body text-foreground/70 mt-3 text-sm md:text-base tracking-wide font-medium">
