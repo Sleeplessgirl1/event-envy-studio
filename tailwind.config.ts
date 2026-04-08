@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-        body: ['"Lato"', '"Open Sans"', 'sans-serif'],
+        display: ['"TheSeasons"', 'Georgia', 'serif'],
+        body: ['"Kollektif"', '"Lato"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
