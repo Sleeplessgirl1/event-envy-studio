@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Wine, ShieldCheck } from "lucide-react";
 import ChatBubblesIcon from "@/components/icons/ChatBubblesIcon";
-import ColorCirclesIcon from "@/components/icons/ColorCirclesIcon";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-event.jpg";
 import copasIcon from "/68aadc0b-7029-4588-ab0d-92a360160fd8.png";
@@ -33,18 +32,18 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 animate-fade-in uppercase">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 animate-fade-in uppercase tracking-wide">
             CREA EXPERIENCIAS INOLVIDABLES
           </h1>
           <p
-            className="font-body text-white/80 text-base md:text-lg mb-10 max-w-2xl mx-auto animate-fade-in opacity-100"
+            className="font-body text-white/80 text-base md:text-lg mb-10 max-w-2xl mx-auto animate-fade-in"
             style={{ animationDelay: "0.2s", opacity: 0 }}
           >
-            renta de mobiliario, cristalería y mantelería para eventos que dejan huella en Chihuahua
+            Renta de mobiliario, cristalería y mantelería para eventos que dejan huella en Chihuahua
           </p>
           <Link
             to="/catalogo"
-            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-white/60 text-white transition-all duration-300 animate-fade-in bg-[#c1b6a4]"
+            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 bg-[#c1b6a4] text-white border border-white/30 transition-all duration-300 hover:bg-brown animate-fade-in"
             style={{ animationDelay: "0.4s", opacity: 0 }}
           >
             Ver Catálogo
@@ -56,7 +55,7 @@ const Index = () => {
       <section className="section-padding bg-background">
         <div className="container-custom text-center max-w-3xl mx-auto">
           <p className="font-body text-muted-foreground text-sm tracking-widest uppercase mb-6">
-            - Experiencia 013
+            — Experiencia 013
           </p>
           <p className="font-display text-2xl md:text-3xl font-light text-foreground leading-relaxed">
             Creemos que cada evento merece ser extraordinario. Por eso, ponemos a tu disposición piezas
@@ -68,43 +67,43 @@ const Index = () => {
       {/* How it works */}
       <section className="section-padding bg-[#c1b6a4]">
         <div className="container-custom py-0">
-          <h2 className="font-display text-3xl text-white mb-6 uppercase text-center font-medium md:text-6xl">
-            ¿CÓMO FUNCIONA?
+          <h2 className="font-display text-3xl md:text-6xl text-white mb-6 uppercase text-center font-light tracking-wide">
+            ¿Cómo funciona?
           </h2>
-          <div className="flex justify-center mb-12 pb-0">
+          <div className="flex justify-center mb-12">
             <img src={copasIcon} alt="Dos copas brindando" loading="lazy" width={120} height={120} className="w-24 h-24 md:w-28 md:h-28 object-contain" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            <div className="animate-fade-in-up border border-solid rounded-2xl shadow-lg px-[33px] my-0 mb-[4px] pt-[23px] pb-[20px] bg-[#c1b6a4]" style={{ animationDelay: "0s", opacity: 0 }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border mb-6 text-secondary-foreground border-primary-foreground">
-                <Wine size={28} className="text-primary-foreground" />
+            <div className="animate-fade-in-up border border-white/30 rounded-2xl shadow-lg px-8 py-6" style={{ animationDelay: "0s", opacity: 0 }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-white/40 mb-6">
+                <Wine size={28} className="text-white" />
               </div>
-              <h3 className="font-display text-xl font-light mb-3 lowercase text-white">
-                elige tus piezas
+              <h3 className="font-display text-xl font-light mb-3 text-white">
+                Elige tus piezas
               </h3>
-              <p className="font-body text-sm leading-relaxed text-secondary-foreground">
+              <p className="font-body text-sm leading-relaxed text-white/80">
                 Explora nuestro catálogo con cristalería, mobiliario, mantelería y más.
               </p>
             </div>
-            <div className="animate-fade-in-up border border-primary-foreground border-solid rounded-3xl shadow-lg" style={{ animationDelay: "0.15s", opacity: 0 }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border text-brown mb-6 border-primary-foreground py-0 my-[16px]">
-                <ChatBubblesIcon size={28} className="text-primary-foreground" />
+            <div className="animate-fade-in-up border border-white/30 rounded-2xl shadow-lg px-8 py-6" style={{ animationDelay: "0.15s", opacity: 0 }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-white/40 mb-6">
+                <ChatBubblesIcon size={28} className="text-white" />
               </div>
-              <h3 className="font-display text-xl font-light mb-3 lowercase text-primary-foreground">
-                personaliza tu evento
+              <h3 className="font-display text-xl font-light mb-3 text-white">
+                Personaliza tu evento
               </h3>
-              <p className="font-body text-sm leading-relaxed text-primary-foreground px-[28px]">
+              <p className="font-body text-sm leading-relaxed text-white/80">
                 Te asesoramos para crear la combinación perfecta que refleje tu visión.
               </p>
             </div>
-            <div className="animate-fade-in-up text-primary-foreground border border-primary-foreground border-solid rounded-3xl shadow-lg opacity-100 my-0" style={{ animationDelay: "0.3s", opacity: 0 }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border text-brown mb-6 border-primary-foreground my-[17px]">
-                <ShieldCheck size={28} className="text-primary-foreground pt-0 my-[22px]" />
+            <div className="animate-fade-in-up border border-white/30 rounded-2xl shadow-lg px-8 py-6" style={{ animationDelay: "0.3s", opacity: 0 }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-white/40 mb-6">
+                <ShieldCheck size={28} className="text-white" />
               </div>
-              <h3 className="font-display text-xl font-light mb-3 lowercase text-primary-foreground bg-[#c1b6a4]">
-                disfruta sin preocupaciones
+              <h3 className="font-display text-xl font-light mb-3 text-white">
+                Disfruta sin preocupaciones
               </h3>
-              <p className="font-body text-sm leading-relaxed text-primary-foreground px-[40px]">
+              <p className="font-body text-sm leading-relaxed text-white/80">
                 Nosotros nos encargamos de la logística para que tú disfrutes tu evento.
               </p>
             </div>
@@ -115,10 +114,10 @@ const Index = () => {
       {/* Browse by Category */}
       <section className="section-padding bg-background">
         <div className="container-custom">
-          <h2 className="font-display text-3xl md:text-4xl font-light text-center text-foreground mb-4 lowercase">
-            explora por categoría
+          <h2 className="font-display text-3xl md:text-4xl font-light text-center text-foreground mb-4">
+            Explora por categoría
           </h2>
-          <div className="w-12 h-px bg-brown/40 mx-auto mb-12" />
+          <div className="w-12 h-px bg-[#c1b6a4] mx-auto mb-12" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {categories.slice(0, 8).map((category, index) => (
               <Link
@@ -133,7 +132,7 @@ const Index = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-brown-dark/40 group-hover:bg-brown-dark/20 transition-colors duration-500" />
-                <div className="absolute inset-0 flex items-end p-4 opacity-0">
+                <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="font-display text-sm tracking-wide text-white">
                     {category.name}
                   </h3>
@@ -144,7 +143,7 @@ const Index = () => {
           <div className="text-center mt-10">
             <Link
               to="/catalogo"
-              className="inline-block font-body text-xs tracking-[0.3em] uppercase px-8 py-3 border text-foreground transition-all duration-300 bg-[#c1b6a4] border-secondary-foreground"
+              className="inline-block font-body text-xs tracking-[0.3em] uppercase px-8 py-3 bg-[#c1b6a4] text-white border border-[#c1b6a4] transition-all duration-300 hover:bg-brown"
             >
               Ver Todo
             </Link>
@@ -153,9 +152,9 @@ const Index = () => {
       </section>
 
       {/* Testimonial */}
-      <section className="section-padding bg-accent-foreground">
+      <section className="section-padding bg-card">
         <div className="container-custom text-center max-w-3xl mx-auto">
-          <p className="font-display text-xl font-light leading-relaxed mb-6 text-card-foreground md:text-4xl">
+          <p className="font-body text-lg md:text-2xl font-light leading-relaxed mb-6 text-foreground italic">
             "Experiencia 013 transformó nuestra celebración en algo mágico. Cada pieza fue perfecta
             y el servicio superó nuestras expectativas."
           </p>
@@ -165,18 +164,18 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA — Beige Warm */}
-      <section className="section-padding bg-beige-warm text-center bg-white text-white">
+      {/* CTA */}
+      <section className="section-padding bg-background text-center">
         <div className="container-custom">
-          <h2 className="font-display text-3xl md:text-4xl font-light mb-4 lowercase text-black">
-            sé el anfitrión perfecto
+          <h2 className="font-display text-3xl md:text-4xl font-light mb-4 text-foreground">
+            Sé el anfitrión perfecto
           </h2>
-          <p className="font-body text-foreground/60 mb-8 max-w-xl mx-auto text-sm">
+          <p className="font-body text-muted-foreground mb-8 max-w-xl mx-auto text-sm">
             Contáctanos y juntos diseñaremos cada detalle de tu celebración.
           </p>
           <Link
             to="/contacto"
-            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 border border-foreground/40 transition-all duration-300 text-primary-foreground bg-[#c1b6a4]"
+            className="inline-block font-body text-xs tracking-[0.3em] uppercase px-10 py-4 bg-[#c1b6a4] text-white border border-[#c1b6a4] transition-all duration-300 hover:bg-brown"
           >
             Contáctanos
           </Link>

@@ -25,7 +25,7 @@ const ContactoPage = () => {
 
   return (
     <Layout>
-      {/* Hero Banner — same style as INICIO */}
+      {/* Hero Banner */}
       <section className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden">
         <img
           src={heroImage}
@@ -34,7 +34,7 @@ const ContactoPage = () => {
         />
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase tracking-wide">
             Contacto
           </h1>
         </div>
@@ -51,46 +51,46 @@ const ContactoPage = () => {
             {/* Form */}
             <form onSubmit={handleSubmit} className="lg:col-span-3 space-y-5">
               <div>
-                <label className="block font-body text-sm font-semibold mb-1.5">Nombre *</label>
+                <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Nombre *</label>
                 <input
                   type="text"
                   required
                   value={form.nombre}
                   onChange={(e) => setForm({ ...form, nombre: e.target.value })}
-                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors"
+                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm text-foreground focus:outline-none focus:border-[#c1b6a4] transition-colors"
                   placeholder="Tu nombre completo"
                 />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block font-body text-sm font-semibold mb-1.5">Email *</label>
+                  <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Email *</label>
                   <input
                     type="email"
                     required
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors"
+                    className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm text-foreground focus:outline-none focus:border-[#c1b6a4] transition-colors"
                     placeholder="tu@email.com"
                   />
                 </div>
                 <div>
-                  <label className="block font-body text-sm font-semibold mb-1.5">Teléfono *</label>
+                  <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Teléfono *</label>
                   <input
                     type="tel"
                     required
                     value={form.telefono}
                     onChange={(e) => setForm({ ...form, telefono: e.target.value })}
-                    className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors"
+                    className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm text-foreground focus:outline-none focus:border-[#c1b6a4] transition-colors"
                     placeholder="614 000 0000"
                   />
                 </div>
               </div>
               <div>
-                <label className="block font-body text-sm font-semibold mb-1.5">Tipo de Evento</label>
+                <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Tipo de Evento</label>
                 <select
                   value={form.tipoEvento}
                   onChange={(e) => setForm({ ...form, tipoEvento: e.target.value })}
-                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors"
+                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm text-foreground focus:outline-none focus:border-[#c1b6a4] transition-colors"
                 >
                   <option value="">Selecciona un tipo</option>
                   {eventTypes.map((t) => (
@@ -99,18 +99,18 @@ const ContactoPage = () => {
                 </select>
               </div>
               <div>
-                <label className="block font-body text-sm font-semibold mb-1.5">Mensaje</label>
+                <label className="block font-body text-sm font-semibold text-foreground mb-1.5">Mensaje</label>
                 <textarea
                   rows={4}
                   value={form.mensaje}
                   onChange={(e) => setForm({ ...form, mensaje: e.target.value })}
-                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm text-foreground focus:outline-none focus:border-[#c1b6a4] transition-colors resize-none"
                   placeholder="Cuéntanos sobre tu evento..."
                 />
               </div>
               <button
                 type="submit"
-                className="flex items-center gap-2 font-body text-sm tracking-widest uppercase px-8 py-3 bg-[#c1b6a4] text-white rounded-sm transition-all duration-300 hover:bg-brown"
+                className="flex items-center gap-2 font-body text-xs tracking-[0.3em] uppercase px-8 py-3 bg-[#c1b6a4] text-white transition-all duration-300 hover:bg-brown"
               >
                 <Send size={16} />
                 Enviar Consulta
@@ -119,19 +119,19 @@ const ContactoPage = () => {
 
             {/* Info Panel */}
             <div className="lg:col-span-2 bg-card rounded-lg p-8">
-              <h2 className="font-display text-xl font-semibold mb-6">Información</h2>
+              <h2 className="font-display text-xl font-light text-foreground mb-6">Información</h2>
               <ul className="space-y-6">
                 <li className="flex items-start gap-3">
                   <MapPin size={20} className="text-[#c1b6a4] shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-body text-sm font-semibold">Ubicación</p>
+                    <p className="font-body text-sm font-semibold text-foreground">Ubicación</p>
                     <p className="font-body text-sm text-muted-foreground">Chihuahua, Chihuahua, México</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <Phone size={20} className="text-[#c1b6a4] shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-body text-sm font-semibold">Teléfono</p>
+                    <p className="font-body text-sm font-semibold text-foreground">Teléfono</p>
                     <a href="tel:6141017574" className="font-body text-sm text-muted-foreground hover:text-[#c1b6a4] transition-colors">
                       614 101 75 74
                     </a>
@@ -140,7 +140,7 @@ const ContactoPage = () => {
                 <li className="flex items-start gap-3">
                   <Instagram size={20} className="text-[#c1b6a4] shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-body text-sm font-semibold">Instagram</p>
+                    <p className="font-body text-sm font-semibold text-foreground">Instagram</p>
                     <a
                       href="https://www.instagram.com/experiencia.013?igsh=MXh1Z3ZwOGs2bnJ6Mw=="
                       target="_blank"
