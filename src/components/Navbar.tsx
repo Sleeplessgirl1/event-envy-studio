@@ -5,6 +5,7 @@ const logo = "/LogoColor-01.png";
 
 const navLinks = [
   { to: "/", label: "Inicio" },
+  { to: "/nosotros", label: "Nosotros" },
   { to: "/catalogo", label: "Catálogo" },
   { to: "/inspo", label: "Inspo" },
   { to: "/contacto", label: "Contacto" },
