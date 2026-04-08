@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Phone, Clock, FileText, HelpCircle, Users, Eye, Target } from "lucide-react";
+import nosotrosBg from "@/assets/nosotros-bg.png";
 
 const Nosotros = () => {
   return (
