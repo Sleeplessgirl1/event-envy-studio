@@ -18,8 +18,8 @@
     --primary: 40 15% 74%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 338 75% 31%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 36 20% 73%;
+    --secondary-foreground: 0 0% 20%;
 
     --muted: 40 10% 94%;
     --muted-foreground: 0 0% 45%;
@@ -37,12 +37,12 @@
     --radius: 0.5rem;
 
     /* Brand colors */
-    --wine: 338 75% 31%;
-    --wine-foreground: 0 0% 100%;
+    --wine: 36 20% 73%;
+    --wine-foreground: 0 0% 20%;
     --brown: 33 22% 45%;
     --brown-light: 33 20% 55%;
     --brown-dark: 33 22% 30%;
-    --garnet: 349 46% 33%;
+    --garnet: 36 20% 65%;
     --olive: 56 24% 30%;
     --beige-warm: 40 15% 74%;
     --cream: 40 20% 92%;

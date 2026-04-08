@@ -11,17 +11,23 @@ import nosotrosBg from "@/assets/nosotros-bg.png";
 const Nosotros = () => {
   return (
     <Layout>
-      {/* Hero Banner */}
-      <section className="relative py-16 md:py-24 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center my-0 mb-[12px] py-0 pb-[18px] pt-[6px]"
-          style={{ backgroundImage: `url(${nosotrosBg})` }}
+      {/* Hero Banner — same style as INICIO */}
+      <section className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden">
+        <img
+          src={nosotrosBg}
+          alt="Nosotros - Experiencia 013"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/40 mb-[20px]" />
+        <div className="absolute inset-0 bg-brown-dark/40" />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase italic">
+            Nosotros
+          </h1>
+        </div>
       </section>
 
       {/* Sobre Nosotros */}
-      <section className="section-padding bg-background my-[94px]">
+      <section className="section-padding bg-background">
         <div className="container-custom max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border border-border mb-6">
@@ -53,7 +59,6 @@ const Nosotros = () => {
       <section className="section-padding bg-card">
         <div className="container-custom max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-            {/* Misión */}
             <div className="text-center md:text-left">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full border border-[#c1b6a4] mb-6">
                 <Target size={24} className="text-[#c1b6a4]" />
@@ -70,8 +75,6 @@ const Nosotros = () => {
                 cada cliente y cuidando cada detalle para que su evento luzca impecable.
               </p>
             </div>
-
-            {/* Visión */}
             <div className="text-center md:text-left">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full border border-[#c1b6a4] mb-6">
                 <Eye size={24} className="text-[#c1b6a4]" />
@@ -188,13 +191,13 @@ const Nosotros = () => {
                       <span className="font-semibold text-foreground">Flete:</span> Costo de envío del mobiliario/equipo. Se calcula en base a la cantidad, volumen y ubicación, y puede ajustarse en caso de agregar o eliminar mobiliario.
                     </li>
                     <li>
-                      <span className="font-semibold text-foreground">Maniobras:</span> Costo por montajes complejos que impliquen escaleras, elevadores de carga, pasillos reducidos, distancias largas u otras condiciones especiales. En caso de que estas condiciones no hayan sido informadas previamente, el cargo adicional deberá cubrirse al momento de la entrega. Se deberá contar con un acceso adecuado de mínimo 2 metros de ancho.
+                      <span className="font-semibold text-foreground">Maniobras:</span> Costo por montajes complejos que impliquen escaleras, elevadores de carga, pasillos reducidos, distancias largas u otras condiciones especiales.
                     </li>
                     <li>
-                      <span className="font-semibold text-foreground">Montaje:</span> Costo por el acomodo del mobiliario conforme a las indicaciones del cliente. En caso de no contratar este servicio, el mobiliario se entregará acomodado o apilado, y el cliente será responsable de su acomodo final.
+                      <span className="font-semibold text-foreground">Montaje:</span> Costo por el acomodo del mobiliario conforme a las indicaciones del cliente.
                     </li>
                     <li>
-                      <span className="font-semibold text-foreground">Entrega o recolección fuera de horario:</span> Costo adicional por entregas o recolecciones realizadas antes de las 10:00 am de lunes a sábado, después de las 5:00 pm de lunes a viernes, después de las 2:00 pm los sábados, o recolección en domingo.
+                      <span className="font-semibold text-foreground">Entrega o recolección fuera de horario:</span> Costo adicional por entregas o recolecciones realizadas antes de las 10:00 am o después de las 5:00 pm.
                     </li>
                   </ul>
                 </div>
@@ -246,7 +249,7 @@ const Nosotros = () => {
               </AccordionTrigger>
               <AccordionContent>
                 <p className="font-body text-sm text-muted-foreground">
-                  No, nos especializamos en la renta de mobiliario, cristalería y decoración de un evento, más no contamos con servicio de coordinación de servicios externos.
+                  No, nos especializamos en la renta de mobiliario, cristalería y decoración.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -268,7 +271,7 @@ const Nosotros = () => {
               </AccordionTrigger>
               <AccordionContent>
                 <p className="font-body text-sm text-muted-foreground">
-                  Sí, se cobra un servicio de flete y dependiendo del horario del servicio se cobrará un servicio de maniobras fuera de horario de trabajo. También puedes recoger y entregar en nuestra bodega si así lo deseas.
+                  Sí, se cobra un servicio de flete. También puedes recoger y entregar en nuestra bodega.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -279,7 +282,7 @@ const Nosotros = () => {
               </AccordionTrigger>
               <AccordionContent>
                 <p className="font-body text-sm text-muted-foreground">
-                  No, para separar los productos es indispensable contar con el 50% de anticipo. El resto de la cotización se liquida a más tardar 2 días antes del evento.
+                  No, para separar los productos es indispensable contar con el 50% de anticipo.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -290,7 +293,7 @@ const Nosotros = () => {
               </AccordionTrigger>
               <AccordionContent>
                 <p className="font-body text-sm text-muted-foreground">
-                  Se podrá subir y bajar cantidades hasta 5 días antes del evento. En caso de cancelar el evento el pago no será reembolsable ni se podrá utilizar para otro evento.
+                  Se podrá subir y bajar cantidades hasta 5 días antes del evento. En caso de cancelar, el pago no será reembolsable.
                 </p>
               </AccordionContent>
             </AccordionItem>

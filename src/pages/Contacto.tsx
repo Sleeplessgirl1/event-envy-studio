@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { MapPin, Phone, Instagram, Send } from "lucide-react";
+import heroImage from "@/assets/hero-event.jpg";
 
 const WHATSAPP_NUMBER = "6141017574";
 const eventTypes = ["Boda", "Baby Shower", "Cumpleaños", "Corporativo", "Otro"];
@@ -24,13 +25,27 @@ const ContactoPage = () => {
 
   return (
     <Layout>
+      {/* Hero Banner — same style as INICIO */}
+      <section className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden">
+        <img
+          src={heroImage}
+          alt="Contacto - Experiencia 013"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-brown-dark/40" />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase italic">
+            Contacto
+          </h1>
+        </div>
+      </section>
+
       <section className="section-padding">
         <div className="container-custom">
-          <h1 className="font-display text-3xl md:text-4xl font-bold text-center mb-2">Contacto</h1>
           <p className="text-center text-muted-foreground font-body mb-8">
             Cuéntanos sobre tu evento y te asesoramos
           </p>
-          <div className="w-16 h-0.5 bg-secondary mx-auto mb-12" />
+          <div className="w-16 h-0.5 bg-[#c1b6a4] mx-auto mb-12" />
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             {/* Form */}
@@ -42,7 +57,7 @@ const ContactoPage = () => {
                   required
                   value={form.nombre}
                   onChange={(e) => setForm({ ...form, nombre: e.target.value })}
-                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-secondary transition-colors"
+                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors"
                   placeholder="Tu nombre completo"
                 />
               </div>
@@ -54,7 +69,7 @@ const ContactoPage = () => {
                     required
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-secondary transition-colors"
+                    className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors"
                     placeholder="tu@email.com"
                   />
                 </div>
@@ -65,7 +80,7 @@ const ContactoPage = () => {
                     required
                     value={form.telefono}
                     onChange={(e) => setForm({ ...form, telefono: e.target.value })}
-                    className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-secondary transition-colors"
+                    className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors"
                     placeholder="614 000 0000"
                   />
                 </div>
@@ -75,7 +90,7 @@ const ContactoPage = () => {
                 <select
                   value={form.tipoEvento}
                   onChange={(e) => setForm({ ...form, tipoEvento: e.target.value })}
-                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-secondary transition-colors"
+                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors"
                 >
                   <option value="">Selecciona un tipo</option>
                   {eventTypes.map((t) => (
@@ -89,13 +104,13 @@ const ContactoPage = () => {
                   rows={4}
                   value={form.mensaje}
                   onChange={(e) => setForm({ ...form, mensaje: e.target.value })}
-                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-secondary transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-sm border border-border bg-background font-body text-sm focus:outline-none focus:border-[#c1b6a4] transition-colors resize-none"
                   placeholder="Cuéntanos sobre tu evento..."
                 />
               </div>
               <button
                 type="submit"
-                className="flex items-center gap-2 font-body text-sm tracking-widest uppercase px-8 py-3 bg-secondary text-secondary-foreground rounded-sm transition-all duration-300 hover:bg-garnet"
+                className="flex items-center gap-2 font-body text-sm tracking-widest uppercase px-8 py-3 bg-[#c1b6a4] text-white rounded-sm transition-all duration-300 hover:bg-brown"
               >
                 <Send size={16} />
                 Enviar Consulta
@@ -107,30 +122,30 @@ const ContactoPage = () => {
               <h2 className="font-display text-xl font-semibold mb-6">Información</h2>
               <ul className="space-y-6">
                 <li className="flex items-start gap-3">
-                  <MapPin size={20} className="text-secondary shrink-0 mt-0.5" />
+                  <MapPin size={20} className="text-[#c1b6a4] shrink-0 mt-0.5" />
                   <div>
                     <p className="font-body text-sm font-semibold">Ubicación</p>
                     <p className="font-body text-sm text-muted-foreground">Chihuahua, Chihuahua, México</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Phone size={20} className="text-secondary shrink-0 mt-0.5" />
+                  <Phone size={20} className="text-[#c1b6a4] shrink-0 mt-0.5" />
                   <div>
                     <p className="font-body text-sm font-semibold">Teléfono</p>
-                    <a href="tel:6141017574" className="font-body text-sm text-muted-foreground hover:text-secondary transition-colors">
+                    <a href="tel:6141017574" className="font-body text-sm text-muted-foreground hover:text-[#c1b6a4] transition-colors">
                       614 101 75 74
                     </a>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Instagram size={20} className="text-secondary shrink-0 mt-0.5" />
+                  <Instagram size={20} className="text-[#c1b6a4] shrink-0 mt-0.5" />
                   <div>
                     <p className="font-body text-sm font-semibold">Instagram</p>
                     <a
                       href="https://www.instagram.com/experiencia.013?igsh=MXh1Z3ZwOGs2bnJ6Mw=="
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-body text-sm text-muted-foreground hover:text-secondary transition-colors"
+                      className="font-body text-sm text-muted-foreground hover:text-[#c1b6a4] transition-colors"
                     >
                       @experiencia.013
                     </a>
