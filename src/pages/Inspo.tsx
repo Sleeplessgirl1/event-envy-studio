@@ -30,7 +30,7 @@ const InspoPage = () => {
 
   return (
     <Layout>
-      {/* Hero Banner — same style as INICIO */}
+      {/* Hero Banner */}
       <section className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden">
         <img
           src={heroImage}
@@ -39,7 +39,7 @@ const InspoPage = () => {
         />
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase tracking-wide">
             Inspiración
           </h1>
         </div>
@@ -79,10 +79,10 @@ const InspoPage = () => {
                 style={{ animationDelay: `${i * 0.05}s`, opacity: 0 }}
               >
                 <div className="absolute inset-0 flex items-center justify-center bg-[#c1b6a4]/20">
-                  <span className="font-display text-sm text-foreground/50">{item.type}</span>
+                  <span className="font-body text-sm text-foreground/50">{item.type}</span>
                 </div>
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/40 transition-colors duration-300 flex items-end">
-                  <p className="p-3 text-background text-xs font-body opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="p-3 text-white text-xs font-body opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {item.description}
                   </p>
                 </div>
@@ -92,14 +92,14 @@ const InspoPage = () => {
 
           {/* CTA */}
           <div className="mt-16 text-center bg-card rounded-lg p-8 md:p-12">
-            <h2 className="font-display text-2xl md:text-3xl font-semibold mb-4">
+            <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">
               ¿Quieres crear tu evento así?
             </h2>
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola Experiencia 013, vi su galería de inspiración y me gustaría crear algo similar para mi evento. ¿Podrían asesorarme?")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 bg-[#c1b6a4] text-white rounded-sm transition-all duration-300 hover:bg-brown"
+              className="inline-block font-body text-xs tracking-[0.3em] uppercase px-8 py-4 bg-[#c1b6a4] text-white transition-all duration-300 hover:bg-brown"
             >
               Contáctanos por WhatsApp
             </a>
@@ -116,7 +116,7 @@ const InspoPage = () => {
           <div className="relative bg-background rounded-lg max-w-2xl w-full overflow-hidden" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={() => setSelectedItem(null)}
-              className="absolute top-3 right-3 z-10 p-2 rounded-full bg-foreground/50 text-background hover:bg-foreground/70 transition-colors"
+              className="absolute top-3 right-3 z-10 p-2 rounded-full bg-foreground/50 text-white hover:bg-foreground/70 transition-colors"
             >
               <X size={20} />
             </button>
@@ -124,8 +124,8 @@ const InspoPage = () => {
               <span className="font-display text-2xl text-muted-foreground/40">{selectedItem.type}</span>
             </div>
             <div className="p-6">
-              <span className="text-xs font-body tracking-widest uppercase text-[#c1b6a4]">{selectedItem.type}</span>
-              <p className="font-display text-lg mt-1">{selectedItem.description}</p>
+              <span className="font-body text-xs tracking-widest uppercase text-[#c1b6a4]">{selectedItem.type}</span>
+              <p className="font-body text-base text-foreground mt-1">{selectedItem.description}</p>
             </div>
           </div>
         </div>
