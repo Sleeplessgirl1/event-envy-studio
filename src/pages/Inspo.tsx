@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { X } from "lucide-react";
+import heroImage from "@/assets/hero-event.jpg";
 
 const eventTypes = ["Todos", "Bodas", "Baby Shower", "Cumpleaños", "Corporativo", "Quinceaños", "Aniversarios"];
 
-// Placeholder images - in production these would be real event photos
 const inspoItems = [
   { id: 1, type: "Bodas", description: "Mesa principal con cristalería dorada y flores blancas" },
   { id: 2, type: "Bodas", description: "Recepción elegante con mantelería de lino" },
@@ -30,13 +30,27 @@ const InspoPage = () => {
 
   return (
     <Layout>
+      {/* Hero Banner — same style as INICIO */}
+      <section className="relative h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden">
+        <img
+          src={heroImage}
+          alt="Inspiración para eventos"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-brown-dark/40" />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase italic">
+            Inspiración
+          </h1>
+        </div>
+      </section>
+
       <section className="section-padding">
         <div className="container-custom">
-          <h1 className="font-display text-3xl md:text-4xl font-bold text-center mb-2">Inspiración</h1>
           <p className="text-center text-muted-foreground font-body mb-8">
             Descubre cómo nuestros productos transforman eventos
           </p>
-          <div className="w-16 h-0.5 bg-secondary mx-auto mb-10" />
+          <div className="w-16 h-0.5 bg-[#c1b6a4] mx-auto mb-10" />
 
           {/* Filters */}
           <div className="flex flex-wrap justify-center gap-2 mb-12">
@@ -46,8 +60,8 @@ const InspoPage = () => {
                 onClick={() => setActiveFilter(type)}
                 className={`px-4 py-2 rounded-full text-xs md:text-sm font-body tracking-wide transition-all duration-300 border ${
                   activeFilter === type
-                    ? "bg-secondary text-secondary-foreground border-secondary"
-                    : "bg-background text-muted-foreground border-border hover:border-secondary hover:text-secondary"
+                    ? "bg-[#c1b6a4] text-white border-[#c1b6a4]"
+                    : "bg-background text-muted-foreground border-border hover:border-[#c1b6a4] hover:text-foreground"
                 }`}
               >
                 {type}
@@ -64,7 +78,7 @@ const InspoPage = () => {
                 className="group relative aspect-square bg-muted rounded-lg overflow-hidden cursor-pointer animate-scale-in"
                 style={{ animationDelay: `${i * 0.05}s`, opacity: 0 }}
               >
-                <div className="absolute inset-0 flex items-center justify-center bg-primary/20">
+                <div className="absolute inset-0 flex items-center justify-center bg-[#c1b6a4]/20">
                   <span className="font-display text-sm text-foreground/50">{item.type}</span>
                 </div>
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/40 transition-colors duration-300 flex items-end">
@@ -85,7 +99,7 @@ const InspoPage = () => {
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola Experiencia 013, vi su galería de inspiración y me gustaría crear algo similar para mi evento. ¿Podrían asesorarme?")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 bg-secondary text-secondary-foreground rounded-sm transition-all duration-300 hover:bg-garnet"
+              className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 bg-[#c1b6a4] text-white rounded-sm transition-all duration-300 hover:bg-brown"
             >
               Contáctanos por WhatsApp
             </a>
@@ -110,7 +124,7 @@ const InspoPage = () => {
               <span className="font-display text-2xl text-muted-foreground/40">{selectedItem.type}</span>
             </div>
             <div className="p-6">
-              <span className="text-xs font-body tracking-widest uppercase text-secondary">{selectedItem.type}</span>
+              <span className="text-xs font-body tracking-widest uppercase text-[#c1b6a4]">{selectedItem.type}</span>
               <p className="font-display text-lg mt-1">{selectedItem.description}</p>
             </div>
           </div>
