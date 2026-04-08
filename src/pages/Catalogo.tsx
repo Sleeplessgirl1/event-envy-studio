@@ -113,12 +113,12 @@ const CatalogoPage = () => {
                     style={{ animationDelay: `${i * 0.05}s`, opacity: 0 }}
                   >
                     {/* Product image */}
-                    <div className="aspect-square bg-muted flex items-center justify-center overflow-hidden">
+                    <div className="h-[300px] w-full bg-secondary flex items-center justify-center overflow-hidden p-6">
                       {product.image ? (
                         <img
                           src={product.image}
                           alt={product.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
                           loading="lazy"
                         />
                       ) : (
