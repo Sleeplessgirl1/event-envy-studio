@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { MapPin, Phone, Instagram, Send } from "lucide-react";
-import heroImage from "@/assets/hero-event.jpg";
+// ... keep existing code
+const heroImage = "/4e57f968-4390-4b39-b9a9-d84d51aac223.jpg";
+// ... keep existing code
 
 const WHATSAPP_NUMBER = "6141017574";
 const eventTypes = ["Boda", "Baby Shower", "Cumpleaños", "Corporativo", "Otro"];
@@ -32,7 +34,7 @@ const ContactoPage = () => {
           alt="Contacto - Experiencia 013"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-brown-dark/40" />
+        <div className="absolute inset-0 bg-brown-dark/40 py-0 mb-[18px]" />
         <div className="relative z-10 text-center px-4">
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase tracking-wide">
             Contacto
