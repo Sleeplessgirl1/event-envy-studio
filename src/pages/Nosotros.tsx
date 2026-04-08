@@ -17,12 +17,12 @@ const Nosotros = () => {
           className="absolute inset-0 bg-cover bg-center opacity-25"
           style={{ backgroundImage: `url(${nosotrosBg})` }}
         />
-        <div className="absolute inset-0 bg-[#c1b6a4]/40" />
+        <div className="absolute inset-0 bg-[#713345]/[0.07] opacity-50 text-secondary" />
         <div className="container-custom text-center relative z-10">
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary-foreground/70 mb-4">
+          <p className="font-body text-xs tracking-[0.3em] uppercase mb-4 text-black">
             Experiencia 013
           </p>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-light text-primary-foreground uppercase italic">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-light uppercase italic text-black mx-[240px]">
             Nosotros
           </h1>
         </div>
