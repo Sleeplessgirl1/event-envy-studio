@@ -119,7 +119,7 @@ const Index = () => {
           </h2>
           <div className="w-12 h-px bg-[#c1b6a4] mx-auto mb-12" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {categories.slice(0, 8).map((category, index) => (
+            {categories.slice(0, 3).map((category, index) => (
               <Link
                 key={category.id}
                 to={`/catalogo#${category.id}`}
