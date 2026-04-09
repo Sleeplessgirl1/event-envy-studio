@@ -17,7 +17,7 @@ export interface Category {
 export const categories: Category[] = [
   {
     id: "cristaleria",
-    name: "Cristalería",
+    name: "Cristalería y Vajilla",
     products: [
       { id: "vino-tinto", name: "Vino Tinto", price: 10, image: "/catalog/vino-tinto.png" },
       { id: "mimosa", name: "Mimosa", price: 10, image: "/catalog/mimosa.webp" },
