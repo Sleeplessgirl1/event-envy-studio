@@ -7,7 +7,7 @@ import copasIcon from "/68aadc0b-7029-4588-ab0d-92a360160fd8.png";
 import { categories } from "@/data/catalog";
 
 const categoryImages: Record<string, string> = {
-  cristaleria: "/catalog/Experiencia 013-43.png",
+  cristaleria: "/catalog/cristaleria-category.jpg",
   copas: "/catalog/libia arandano.jpg",
   cubiertos: "/catalog/",
   "platos-base": "/catalog/melamina dorado.png",
