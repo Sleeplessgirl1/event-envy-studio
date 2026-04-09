@@ -36,7 +36,7 @@ const ContactoPage = () => {
         />
         <div className="absolute inset-0 bg-brown-dark/40 py-0 mb-[18px]" />
         <div className="relative z-10 text-center px-4">
-          <h1 className="font-hero text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase tracking-[0.15em]">
+          <h1 className="font-hero text-4xl md:text-6xl lg:text-7xl font-light italic text-white uppercase tracking-[0.15em]">
             Contacto
           </h1>
         </div>
