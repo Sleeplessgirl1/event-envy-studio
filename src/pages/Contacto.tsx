@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { MapPin, Phone, Instagram, Send } from "lucide-react";
 // ... keep existing code
-const heroImage = "/b0ed954a-3ddd-4aef-bd77-4a729f5000d9.jpg";
+const heroImage = "/contacto-hero.jpg";
 // ... keep existing code
 
 const WHATSAPP_NUMBER = "6141017574";
