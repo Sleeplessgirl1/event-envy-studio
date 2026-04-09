@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ['"TheSeasons"', 'Georgia', 'serif'],
+        hero: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         body: ['"Kollektif"', '"Lato"', 'sans-serif'],
       },
       colors: {
