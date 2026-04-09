@@ -112,7 +112,7 @@ const Index = () => {
       </section>
 
       {/* Browse by Category */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted/50">
         <div className="container-custom">
           <h2 className="font-display text-3xl md:text-4xl font-light text-center text-foreground mb-4">
             Explora por categoría

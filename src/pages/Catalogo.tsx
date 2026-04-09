@@ -53,7 +53,7 @@ const CatalogoPage = () => {
       </section>
 
       {/* Category Gallery or Product Grid */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted/50">
         <div className="container-custom">
           <div className="w-16 h-0.5 mx-auto mb-10 bg-[#c1b6a4]" />
 
