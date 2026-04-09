@@ -7,7 +7,7 @@ import copasIcon from "/68aadc0b-7029-4588-ab0d-92a360160fd8.png";
 import { categories } from "@/data/catalog";
 
 const categoryImages: Record<string, string> = {
-  cristaleria: "/catalog/vino-tinto.png",
+  cristaleria: "/1b8e543f-8274-4283-98ca-b9ce787b33be.jpg",
   copas: "/catalog/libia arandano.jpg",
   cubiertos: "/catalog/Set mesa dorada.png",
   "platos-base": "/catalog/melamina dorado.png",
@@ -131,8 +131,8 @@ const Index = () => {
                   alt={category.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-brown-dark/40 group-hover:bg-brown-dark/20 transition-colors duration-500" />
-                <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 transition-colors duration-500 bg-[#cfcfcf]/[0.14] px-0 py-0 my-[24px]" />
+                <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pr-0 my-[35px] px-[10px]">
                   <h3 className="font-display text-sm tracking-wide text-white">
                     {category.name}
                   </h3>
