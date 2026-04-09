@@ -32,7 +32,7 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="font-hero text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 animate-fade-in uppercase tracking-[0.15em]">
+          <h1 className="font-hero text-4xl md:text-6xl lg:text-7xl font-light italic text-white mb-6 animate-fade-in uppercase tracking-[0.15em]">
             CREA EXPERIENCIAS INOLVIDABLES
           </h1>
           <p
