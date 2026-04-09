@@ -20,7 +20,7 @@ const Nosotros = () => {
         />
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white uppercase tracking-wide">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-thin text-white uppercase tracking-wide">
             Nosotros
           </h1>
         </div>
