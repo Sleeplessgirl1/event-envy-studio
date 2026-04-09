@@ -8,7 +8,7 @@ import { categories } from "@/data/catalog";
 
 const categoryImages: Record<string, string> = {
   cristaleria: "/catalog/cristaleria-category.jpg",
-  copas: "/catalog/libia arandano.jpg",
+  copas: "/catalog/servilletas-category.jpg",
   cubiertos: "/catalog/",
   "platos-base": "/catalog/melamina dorado.png",
   mobiliario: "/catalog/silla crossback miel.PNG",
