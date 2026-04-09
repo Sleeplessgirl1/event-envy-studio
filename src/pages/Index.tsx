@@ -133,7 +133,7 @@ const Index = () => {
                 />
                 <div className="absolute inset-0 transition-colors duration-500 mr-0 ml-0 bg-[#ebebeb]/[0.36] px-[37px] py-0 my-0 mt-0 mb-0" />
                 <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-0 mt-[93px] mx-[89px] my-0 pr-0 pb-0 mr-[45px] ml-[10px] text-black">
-                  <h3 className="font-display text-sm tracking-wide text-white pl-0 mt-0 pr-0 text-left">
+                  <h3 className="font-display text-sm tracking-wide pl-0 mt-0 pr-0 text-left ml-[12px] text-black">
                     {category.name}
                   </h3>
                 </div>
