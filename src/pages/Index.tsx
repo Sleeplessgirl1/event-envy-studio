@@ -112,7 +112,7 @@ const Index = () => {
       </section>
 
       {/* Browse by Category */}
-      <section className="section-padding bg-muted/50">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <h2 className="font-display text-3xl md:text-4xl font-light text-center text-foreground mb-4">
             Explora por categoría
@@ -131,9 +131,9 @@ const Index = () => {
                   alt={category.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-brown-dark/40 group-hover:bg-brown-dark/20 transition-colors duration-500" />
-                <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="font-display text-sm tracking-wide text-white">
+                <div className="absolute inset-0 transition-colors duration-500 mr-0 ml-0 bg-[#ebebeb]/[0.36] px-[37px] py-0 my-0 mt-0 mb-0" />
+                <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-0 mt-[93px] mx-[89px] my-0 pr-0 pb-0 mr-[45px] ml-[10px] text-black">
+                  <h3 className="font-display text-sm tracking-wide text-white pl-0 mt-0 pr-0 text-left">
                     {category.name}
                   </h3>
                 </div>
