@@ -127,24 +127,28 @@ const Index = () => {
           </h2>
           <div className="w-12 h-px bg-[#c1b6a4] mx-auto mb-12" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {categories.slice(0, 3).map((category, index) => (
+            {categories.slice(0, 3).map((category, index) => {
+              const displayName = category.id === "copas" ? "Servilletas" : category.name;
+              const linkTarget = category.id === "copas" ? "/catalogo#servilletas" : `/catalogo#${category.id}`;
+              return (
               <Link
                 key={category.id}
-                to={`/catalogo#${category.id}`}
+                to={linkTarget}
                 className="group relative aspect-square overflow-hidden animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.08}s`, opacity: 0 }}
               >
                 <img
                   src={categoryImages[category.id] || "/placeholder.svg"}
-                  alt={category.name}
+                  alt={displayName}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-brown-dark/40 group-hover:bg-brown-dark/20 transition-colors duration-500" />
-                <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="font-display text-sm tracking-wide text-white">{category.name}</h3>
+                <div className="absolute inset-0 transition-colors duration-500 mr-0 ml-0 bg-[#ebebeb]/[0.36] px-[37px] py-0 my-0 mt-0 mb-0" />
+                <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-0 mt-[93px] mx-[89px] my-0 pr-0 pb-0 mr-[45px] ml-[10px] text-black">
+                  <h3 className="font-display text-sm tracking-wide pl-0 mt-0 pr-0 text-left ml-[12px] text-black pb-[10px]">{displayName}</h3>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
           <div className="text-center mt-10">
             <Link
