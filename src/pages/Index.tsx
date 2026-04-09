@@ -33,7 +33,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="font-hero text-4xl md:text-6xl lg:text-7xl font-light italic text-white mb-6 animate-fade-in uppercase tracking-[0.15em]">
-            CREA EXPERIENCIAS INOLVIDABLES
+            CREAMOS EXPERIENCIAS INOLVIDABLES
           </h1>
           <p
             className="font-body text-white/80 text-base md:text-lg mb-10 max-w-2xl mx-auto animate-fade-in"
