@@ -14,15 +14,17 @@ const heroImages = [
 ];
 
 const categoryImages: Record<string, string> = {
-  cristaleria: "/catalog/cristaleria-category.jpg",
-  copas: "/catalog/servilletas-category.jpg",
-  cubiertos: "/catalog/decoracion-category.jpg",
-  "platos-base": "/catalog/melamina dorado.png",
-  mobiliario: "/catalog/silla crossback miel.PNG",
+  sillas: "/catalog/silla crossback miel.PNG",
   mesas: "/catalog/mesa de madera.png",
   manteleria: "/catalog/lino arena.jpg",
+  cristaleria: "/catalog/vino-tinto.png",
+  cubiertos: "/catalog/Set mesa dorada.png",
+  "plato-base": "/catalog/melamina dorado.png",
+  vajilla: "/catalog/plato trinche blanco.jpg",
   servilletas: "/catalog/servilleta lino arena.jpg",
-  "backs-decoracion": "/catalog/velas cristal.jpg",
+  "camino-de-mesa": "/catalog/rosa gasa.jpg",
+  "utensilios-charolas": "/placeholder.svg",
+  decoracion: "/catalog/velas cristal.jpg",
 };
 
 const Index = () => {
@@ -185,8 +187,8 @@ const Index = () => {
           <div className="w-12 h-px bg-[#c1b6a4] mx-auto mb-12" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {categories.slice(0, 3).map((category, index) => {
-              const displayName = category.id === "copas" ? "Servilletas" : category.id === "cubiertos" ? "Decoración" : category.name;
-              const linkTarget = category.id === "copas" ? "/catalogo#servilletas" : category.id === "cubiertos" ? "/catalogo#backs-decoracion" : `/catalogo#${category.id}`;
+              const displayName = category.name;
+              const linkTarget = `/catalogo#${category.id}`;
               return (
               <Link
                 key={category.id}
