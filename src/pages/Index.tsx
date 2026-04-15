@@ -187,8 +187,8 @@ const Index = () => {
           <div className="w-12 h-px bg-[#c1b6a4] mx-auto mb-12" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {categories.slice(0, 3).map((category, index) => {
-              const displayName = category.id === "copas" ? "Servilletas" : category.id === "cubiertos" ? "Decoración" : category.name;
-              const linkTarget = category.id === "copas" ? "/catalogo#servilletas" : category.id === "cubiertos" ? "/catalogo#backs-decoracion" : `/catalogo#${category.id}`;
+              const displayName = category.name;
+              const linkTarget = `/catalogo#${category.id}`;
               return (
               <Link
                 key={category.id}
