@@ -76,7 +76,7 @@ const Index = () => {
             className="font-body text-white/80 text-base md:text-lg mb-10 max-w-2xl mx-auto animate-fade-in"
             style={{ animationDelay: "0.2s", opacity: 0 }}
           >
-            Renta de mobiliario, cristalería y mantelería para eventos que dejan huella en Chihuahua
+            Renta de mobiliario, cristalería y mantelería para eventos que dejan huella
           </p>
           <Link
             to="/catalogo"
