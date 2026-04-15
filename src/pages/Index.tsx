@@ -14,15 +14,17 @@ const heroImages = [
 ];
 
 const categoryImages: Record<string, string> = {
-  cristaleria: "/catalog/cristaleria-category.jpg",
-  copas: "/catalog/servilletas-category.jpg",
-  cubiertos: "/catalog/decoracion-category.jpg",
-  "platos-base": "/catalog/melamina dorado.png",
-  mobiliario: "/catalog/silla crossback miel.PNG",
+  sillas: "/catalog/silla crossback miel.PNG",
   mesas: "/catalog/mesa de madera.png",
   manteleria: "/catalog/lino arena.jpg",
+  cristaleria: "/catalog/vino-tinto.png",
+  cubiertos: "/catalog/Set mesa dorada.png",
+  "plato-base": "/catalog/melamina dorado.png",
+  vajilla: "/catalog/plato trinche blanco.jpg",
   servilletas: "/catalog/servilleta lino arena.jpg",
-  "backs-decoracion": "/catalog/velas cristal.jpg",
+  "camino-de-mesa": "/catalog/rosa gasa.jpg",
+  "utensilios-charolas": "/placeholder.svg",
+  decoracion: "/catalog/velas cristal.jpg",
 };
 
 const Index = () => {

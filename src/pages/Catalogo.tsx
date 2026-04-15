@@ -1,31 +1,35 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { categories } from "@/data/catalog";
-import { Wine, UtensilsCrossed, CircleDot, Lamp, RectangleHorizontal, Shirt, Flower2, GlassWater, Armchair } from "lucide-react";
+import { Wine, UtensilsCrossed, CircleDot, Lamp, RectangleHorizontal, Shirt, Flower2, Armchair, CookingPot, Utensils, Salad } from "lucide-react";
 import heroImage from "@/assets/hero-event.jpg";
 
 const categoryIcons: Record<string, React.ElementType> = {
-  cristaleria: Wine,
-  copas: GlassWater,
-  cubiertos: UtensilsCrossed,
-  "platos-base": CircleDot,
-  mobiliario: Armchair,
+  sillas: Armchair,
   mesas: RectangleHorizontal,
   manteleria: Shirt,
+  cristaleria: Wine,
+  cubiertos: UtensilsCrossed,
+  "plato-base": CircleDot,
+  vajilla: CookingPot,
   servilletas: Flower2,
-  "backs-decoracion": Lamp,
+  "camino-de-mesa": Salad,
+  "utensilios-charolas": Utensils,
+  decoracion: Lamp,
 };
 
 const categoryImages: Record<string, string> = {
-  cristaleria: "/catalog/vino-tinto.png",
-  copas: "/catalog/libia arandano.jpg",
-  cubiertos: "/catalog/Set mesa dorada.png",
-  "platos-base": "/catalog/melamina dorado.png",
-  mobiliario: "/catalog/silla crossback miel.PNG",
+  sillas: "/catalog/silla crossback miel.PNG",
   mesas: "/catalog/mesa de madera.png",
   manteleria: "/catalog/lino arena.jpg",
+  cristaleria: "/catalog/vino-tinto.png",
+  cubiertos: "/catalog/Set mesa dorada.png",
+  "plato-base": "/catalog/melamina dorado.png",
+  vajilla: "/catalog/plato trinche blanco.jpg",
   servilletas: "/catalog/servilleta lino arena.jpg",
-  "backs-decoracion": "/catalog/velas cristal.jpg",
+  "camino-de-mesa": "/catalog/rosa gasa.jpg",
+  "utensilios-charolas": "/placeholder.svg",
+  decoracion: "/catalog/velas cristal.jpg",
 };
 
 const CatalogoPage = () => {
