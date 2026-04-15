@@ -218,18 +218,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="section-padding bg-card">
-        <div className="container-custom text-center max-w-3xl mx-auto">
-          <p className="font-body text-lg md:text-2xl font-light leading-relaxed mb-6 text-foreground italic">
-            "Experiencia 013 transformó nuestra celebración en algo mágico. Cada pieza fue perfecta y el servicio superó
-            nuestras expectativas."
-          </p>
-          <span className="font-body text-xs tracking-widest uppercase text-muted-foreground">
-            — Cliente Satisfecho
-          </span>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="section-padding bg-background text-center">
