@@ -3,15 +3,14 @@ import { Wine, ShieldCheck } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 import ChatBubblesIcon from "@/components/icons/ChatBubblesIcon";
 import Layout from "@/components/Layout";
-import heroImage from "@/assets/hero-event.jpg";
+import hero1 from "@/assets/hero-1.jpg";
+import hero2 from "@/assets/hero-2.jpg";
+import hero3 from "@/assets/hero-3.png";
+import hero4 from "@/assets/hero-4.jpg";
 import copasIcon from "/68aadc0b-7029-4588-ab0d-92a360160fd8.png";
 import { categories } from "@/data/catalog";
 
-const heroImages = [
-  heroImage,
-  "/hero-carousel-2.jpg",
-  "/hero-carousel-3.jpg",
-];
+const heroImages = [hero1, hero2, hero3, hero4];
 
 const categoryImages: Record<string, string> = {
   sillas: "/catalog/silla crossback miel.PNG",
