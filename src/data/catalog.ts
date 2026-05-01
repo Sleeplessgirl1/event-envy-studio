@@ -52,9 +52,10 @@ export const categories: Category[] = [
     name: "Cristalería",
     products: [
       { id: "vino-tinto", name: "Vino Tinto", price: 10, image: "/catalog/vino-tinto.png" },
-      { id: "mimosa", name: "Mimosa", price: 10, image: "/catalog/mimosa.webp" },
+      { id: "mimosa", name: "Copa Flauta", price: 10, image: "/catalog/mimosa.webp" },
       { id: "vaso-highball", name: "Vaso Highball", price: 3, image: "/catalog/highball.png" },
       { id: "vaso-napa", name: "Vaso Napa", price: 4, image: "/catalog/napa.webp" },
+      { id: "vaso-napa-verde", name: "Vaso Napa Verde", price: 4, colors: ["Verde"], image: "/catalog/napa verde.webp" },
       { id: "vaso-malfi", name: "Vaso Malfi", price: 10, image: "/catalog/malfi.png" },
       { id: "copa-arandano", name: "Copa Arándano", price: 14, colors: ["Arándano"], image: "/catalog/libia arandano.jpg" },
       { id: "copa-verde-olivo", name: "Copa Verde Olivo", price: 14, colors: ["Verde Olivo"], image: "/catalog/copa libia verde.webp" },
