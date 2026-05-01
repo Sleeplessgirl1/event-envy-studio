@@ -75,15 +75,7 @@ const Index = () => {
           {heroImages.map((_, i) => (
             <button
               key={i}
-              onClick={() => {
-                if (nextSlide === null && i !== currentSlide) {
-                  setNextSlide(i);
-                  setTimeout(() => {
-                    setCurrentSlide(i);
-                    setNextSlide(null);
-                  }, 1200);
-                }
-              }}
+              onClick={() => setCurrentSlide(i)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
                 i === currentSlide ? "bg-white w-6" : "bg-white/50 hover:bg-white/70"
               }`}
