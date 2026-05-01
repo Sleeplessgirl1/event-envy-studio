@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Wine, ShieldCheck } from "lucide-react";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import ChatBubblesIcon from "@/components/icons/ChatBubblesIcon";
 import Layout from "@/components/Layout";
 import hero1 from "@/assets/hero-1.jpg";
