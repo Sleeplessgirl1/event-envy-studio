@@ -70,9 +70,9 @@ export const categories: Category[] = [
       { id: "copa-rayas-transparente", name: "Copa Rayas Transparente", price: 14, colors: ["Transparente"], image: "/catalog/rayas transparente.png" },
       { id: "copa-mocha", name: "Copa Mocha", price: 14, image: "/catalog/copa vintage.jpg" },
       { id: "caballito-tequila", name: "Caballito de Tequila", price: 8 },
-      { id: "copa-bordeaux", name: "Copa Bordeaux", price: 14 },
-      { id: "copa-diamante", name: "Copa Diamante", price: 14 },
-      { id: "copa-lines", name: "Copa Lines", price: 14 },
+      { id: "copa-bordeaux", name: "Copa Bordeaux", price: 14, image: "/catalog/copa bordeaux.png" },
+      { id: "copa-diamante", name: "Copa Diamante", price: 14, image: "/catalog/copa diamante.png" },
+      { id: "copa-lines", name: "Copa Lines", price: 14, image: "/catalog/copa lines.png" },
     ],
   },
   {
