@@ -28,46 +28,29 @@ const categoryImages: Record<string, string> = {
 
 const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [nextSlide, setNextSlide] = useState<number | null>(null);
-
-  const advanceSlide = useCallback(() => {
-    const next = (currentSlide + 1) % heroImages.length;
-    setNextSlide(next);
-    // After transition completes, make next the current
-    setTimeout(() => {
-      setCurrentSlide(next);
-      setNextSlide(null);
-    }, 1200);
-  }, [currentSlide]);
 
   useEffect(() => {
-    const timer = setInterval(advanceSlide, 5000);
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
     return () => clearInterval(timer);
-  }, [advanceSlide]);
+  }, []);
 
   return (
     <Layout>
       {/* Hero — Full Bleed Carousel */}
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-        {/* Current slide */}
-        <img
-          src={heroImages[currentSlide]}
-          alt="Mesa elegante ambientada para evento"
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1200ms] ease-in-out"
-          style={{ opacity: nextSlide !== null ? 0 : 1 }}
-          width={1920}
-          height={1080}
-        />
-        {/* Next slide (fades in) */}
-        {nextSlide !== null && (
+        {heroImages.map((img, i) => (
           <img
-            src={heroImages[nextSlide]}
+            key={img}
+            src={img}
             alt="Mesa elegante ambientada para evento"
-            className="absolute inset-0 w-full h-full object-cover animate-[fadeIn_1.2s_ease-in-out_forwards]"
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out"
+            style={{ opacity: i === currentSlide ? 1 : 0 }}
             width={1920}
             height={1080}
           />
-        )}
+        ))}
         <div className="absolute inset-0 bg-brown-dark/40" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="font-hero text-4xl md:text-6xl lg:text-7xl font-light italic text-white mb-6 animate-fade-in tracking-[0.15em]">
